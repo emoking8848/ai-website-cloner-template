@@ -1,0 +1,387 @@
+{
+  "title": "John Lewis & Partners | Never Knowingly Undersold",
+  "description": "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with modern living across homeware, fashion, and technology. Discover the difference today.",
+  "canonical": "https://www.johnlewis.com/",
+  "ogImage": "https://media.johnlewiscontent.com/i/JohnLewis/ogFeatureImage-johnLewisPartners-040918?fmt=auto",
+  "logo": "https://www.johnlewis.com/header-ui-assets/static/images/john-lewis-partners-f6c40704.svg",
+  "navLinks": [
+    "Women",
+    "Men",
+    "Home & Garden",
+    "Furniture & Lights",
+    "Electricals",
+    "Baby & Kids",
+    "Beauty",
+    "Sport & Travel",
+    "Holiday Shop",
+    "Gifts",
+    "Brands",
+    "Sale & Offers"
+  ],
+  "hero": {
+    "heading": "Big event in the diary?",
+    "subheading": "",
+    "cta": "Women's Occasionwear",
+    "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20SHOT%2028%20006?fmt=auto&wid=599&sm=aspect&aspect=9:16",
+    "cards": [
+      {
+        "title": "Wedding guest dresses",
+        "href": "https://www.johnlewis.com/browse/women/womens-dresses/wedding-guest/_/N-flwZ1z0ropu#intcmp=ic_20260415_wk11weddingguestdresses_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026SUMMERLOOKBOOKDAY2202641830?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Fashion model in pale yellow sleeveless midi dress with ruffle hem, posing in studio, snake-print heels"
+      },
+      {
+        "title": "Mother of the Bride",
+        "href": "https://www.johnlewis.com/browse/women/womens-wedding-fashion/mother-of-the-bride/_/N-5pne#intcmp=ic_20260415_wk11motb_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/009706862alt4?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Studio portrait of a woman wearing an olive green tie-neck dress with cap sleeves and pockets on a white backdrop"
+      },
+      {
+        "title": "Race day dresses",
+        "href": "https://www.johnlewis.com/browse/women/womens-dresses/race-day/_/N-flwZnt8x#intcmp=ic_20260415_wk11racedresses_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/012912418?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Model wearing a cobalt blue midi dress with cap sleeves and seam detail, styled with black sandals in studio."
+      },
+      {
+        "title": "Hats and fascinators",
+        "href": "https://www.johnlewis.com/browse/women/occasion-hats-fascinators/_/N-7hm4#intcmp=ic_20260415_wk11hatsfascinators_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/114312752?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Model wearing white and navy fascinator hat with bow and netting, paired with an off-shoulder dress for weddings"
+      },
+      {
+        "title": "Evening and clutch bags",
+        "href": "https://www.johnlewis.com/browse/women/handbags-bags-purses/evening-clutch/_/N-fjgZ1z0ro1g#intcmp=ic_20260415_wk11clutchbags_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/114343975alt1?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Modern living room with mustard sofa, patterned rug, and large windows. Decor accents create a cosy, inviting space."
+      },
+      {
+        "title": "Jewellery",
+        "href": "https://www.johnlewis.com/browse/women/womens-jewellery/view-all-womens-jewellery/_/N-5w5j#intcmp=ic_20260415_wk11jewellery_hp_wom_a_navb_",
+        "image": "https://media.johnlewiscontent.com/i/JohnLewis/114390680alt1?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+        "alt": "Stack of folded patterned towels on a terracotta floor, with a wicker basket nearby in a cosy bathroom setting."
+      }
+    ]
+  },
+  "offers": [
+    {
+      "heading": "Up to 70% off",
+      "subheading": "John Lewis Women's swimwear",
+      "href": "https://www.johnlewis.com/browse/women/womens-swimwear-beachwear/john-lewis/all-offers/_/N-fm3Z1z141ilZ1yzvw1q#intcmp=ic_20260415_wk11jlswimwear_hp_wom_a_obtn_"
+    },
+    {
+      "heading": "Up to 70% off",
+      "subheading": "John Lewis lingerie",
+      "href": "https://www.johnlewis.com/browse/women/womens-lingerie-underwear/view-all-womens-lingerie-underwear/john-lewis/all-offers/_/N-fkfZ1z141ilZ1yzvw1q#intcmp=ic_20260415_wk11jllingerie_hp_wom_a_obtn_"
+    },
+    {
+      "heading": "Up to 50% off",
+      "subheading": "John Lewis Women's nightwear",
+      "href": "https://www.johnlewis.com/browse/women/womens-nightwear/john-lewis/all-offers/_/N-fm0Z1z141ilZ1yzvw1q#intcmp=ic_20260415_wk11jlnightwear_hp_wom_a_obtn_"
+    },
+    {
+      "heading": "Up to 70% off",
+      "subheading": "John Lewis furniture",
+      "href": "https://www.johnlewis.com/browse/special-offers/home-furniture-offers/all-furniture-offers/john-lewis/reduced-to-clear/_/N-nt4yZ1z141ilZ1yzwd58#intcmp=ic_20260415_wk11jlfurniture_hp_hom_a_obtn_"
+    },
+    {
+      "heading": "Up to 70% off",
+      "subheading": "John Lewis cooking and dining",
+      "href": "https://www.johnlewis.com/browse/special-offers/home-furniture-offers/all-cook-dine-offers/john-lewis/john-lewis-anyday/reduced-to-clear/_/N-nt4wZ1z141ilZo4yoZ1yzwd58#intcmp=ic_20260415_wk11jlcookdine_hp_hom_a_obtn_"
+    },
+    {
+      "heading": "20% off",
+      "subheading": "Elemis",
+      "href": "https://www.johnlewis.com/browse/special-offers/beauty-fragrance-offers/elemis/_/N-eg5Z1z140cc#intcmp=ic_20260415_wk11elemis_hp_bea_a_obtn_"
+    }
+  ],
+  "trending": [
+    {
+      "title": "Garden furniture",
+      "href": "https://www.johnlewis.com/furniture-lights/garden/c600002138#intcmp=ic_20260415_wk11gardenfurniture_hp_hom_a_ctbn_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026OUTDOORDAY03HERITAGELOUNGE1548?fmt=auto&wid=800&sm=aspect&aspect=1:1",
+      "alt": "Modern outdoor lounge set with white cushions, blue pillows and marble coffee table on a garden patio terrace"
+    },
+    {
+      "title": "Holiday Shop",
+      "href": "https://www.johnlewis.com/holiday-shop/c40000320139#intcmp=ic_20260415_wk11holidayshop_hp_cct_a_ctbn_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026summerwrapperbikini?fmt=auto&wid=800&sm=aspect&aspect=1:1",
+      "alt": "Fashion beach portrait of woman in blue bikini holding a brown bag, golden-hour sunlight and clear sky"
+    },
+    {
+      "title": "Outdoor dining",
+      "href": "https://www.johnlewis.com/home-garden/tableware/c60000249#intcmp=ic_20260415_wk11outdoordining_hp_hom_a_ctbn_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026OUTDOORDAY01TIMELESSTABLETOP0407?fmt=auto&wid=800&sm=aspect&aspect=1:1",
+      "alt": "Outdoor teak dining table with blue and white ceramic plates, serving bowl, fish platter and glass tumblers"
+    },
+    {
+      "title": "Men's occasionwear",
+      "href": "https://www.johnlewis.com/men/mens-wedding-fashion/c9600140114#intcmp=ic_20260415_wk11menoccasionwear_hp_men_a_ctbn_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20SHOT%2009%20082?fmt=auto&wid=800&sm=aspect&aspect=1:1",
+      "alt": "Man in light grey suit standing on outdoor stair balcony, leaning on blue rail under modern architecture, sunny sky"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Join the running club",
+      "description": "New gear for every strider",
+      "cta": "Shop running",
+      "href": "https://www.johnlewis.com/browse/sport-leisure/shop-by-sport/running/_/N-od19Z1yzx6ev#intcmp=ic_20260415_wk11fashionrunning_hp_spo_a_tblk_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20DAY%2001%20SHOT%2012%200455%20(1)?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Running shoes, water bottle, massage gun and sports sunglasses on an outdoor court, workout essentials flat lay"
+    },
+    {
+      "title": "Fresh spring beauty",
+      "description": "From Medik8, Estée Lauder and Skin Rocks",
+      "cta": "Shop new in beauty",
+      "href": "https://www.johnlewis.com/browse/beauty/new-in-beauty/_/N-a5f#intcmp=ic_20260415_wk11newbeauty_hp_bea_a_tblk_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2025_SPR_WRAPPER_MW_SHOT_8_2238_ITGproofedRGB?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "A woman with sleek hair poses against a serene sunset, wearing silver earrings and a strappy top, reflecting elegance."
+    },
+    {
+      "title": "Next-level tech",
+      "description": "For your next finish line",
+      "cta": "Shop wearables",
+      "href": "https://www.johnlewis.com/electricals/smart-watches-wearable-tech/c7000270232#intcmp=ic_20260415_wk11techrunning_hp_ele_a_tblk_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20DAY%2001%20SHOT%2010%200421?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Placeholder graphic with “image coming soon” text, indicating product photo or listing image not yet available"
+    },
+    {
+      "title": "New beauty arrivals",
+      "description": "The latest launches from the brands you love",
+      "cta": "Read & Shop",
+      "href": "https://www.johnlewis.com/content/beauty-hair/best-new-beauty-april#intcmp=ic_20250409_wk10newbeautyarrivals_hp_bea_a_econ_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/beauty-arrivals-april-homepage-010426D?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Bobbi Brown makeup and lip gloss on a silver tray floating in a swimming pool with iced cocktails"
+    },
+    {
+      "title": "How to wear a trouser suit",
+      "description": "Get set for wedding season and be the best-dressed guest",
+      "cta": "Read & Shop",
+      "href": "https://www.johnlewis.com/content/fashion/women/how-to-wear-a-trouser-suit#intcmp=ic_20250409_wk10fashionweddingstrousersuit_hp_wom_a_econ_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/edit-trousers-suit-homepage-040325?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Fashion model in green suit and blue blouse posing on rocky coastline at sunset, waves and cliffs behind"
+    },
+    {
+      "title": "The great outdoors",
+      "description": "Creative director Laura Jackson’s entertaining guide",
+      "cta": "Read & Shop",
+      "href": "https://www.johnlewis.com/content/home/laura-jackson-the-great-outdoors#intcmp=ic_20250409_w10laurajacksonoutdoorhosting_hp_hom_a_econ_",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/the-great-outdoors-hp-block-260326?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "A beautifully arranged table with vibrant flowers, candles, ceramics, and glassware. Elegant and colourful setting."
+    }
+  ],
+  "featured": [
+    {
+      "title": "John Lewis Godet Cap Sleeve Top, Cream",
+      "price": "£49.00",
+      "href": "https://www.johnlewis.com/john-lewis-godet-cap-sleeve-top-cream/p114672021",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/010870910?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Nyle Cushion, Multi",
+      "price": "£50.00",
+      "href": "https://www.johnlewis.com/john-lewis-nyle-cushion-multi/p114014221",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/113778052?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Cotton Linen Blend Trousers",
+      "price": "£55.00",
+      "href": "https://www.johnlewis.com/john-lewis-cotton-linen-blend-trousers/natural/p114568473",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/010362492?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Egyptian Cotton Percale Easy Care 400 Thread Count Bedding",
+      "price": "£25.00",
+      "href": "https://www.johnlewis.com/john-lewis-egyptian-cotton-percale-easy-care-400-thread-count-bedding/nordic-blue/p114442773",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/012286038?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Linen Sleeveless Shell Top",
+      "price": "£45.00",
+      "href": "https://www.johnlewis.com/john-lewis-linen-sleeveless-shell-top/orange/p114638718",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/010592291?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Hollies Woven Leather Ballet Flats, Bordeaux",
+      "price": "£85.00",
+      "href": "https://www.johnlewis.com/john-lewis-hollies-woven-leather-ballet-flats-bordeaux/p114563787",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/010418280?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Hand Painted Stoneware Shell Side Plate, 21.5cm, White/Blue",
+      "price": "£10.00",
+      "href": "https://www.johnlewis.com/john-lewis-hand-painted-stoneware-shell-side-plate-21-5cm-white-blue/p114281993",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/114234360?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis x Sanderson Rattan Round Placemat, Set of 2, Natural",
+      "price": "£28.00",
+      "href": "https://www.johnlewis.com/john-lewis-x-sanderson-rattan-round-placemat-set-of-2-natural/p113451974",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/113421977?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Dropped Waist Short Sleeve Midi Dress, Khaki",
+      "price": "£99.00",
+      "href": "https://www.johnlewis.com/john-lewis-dropped-waist-short-sleeve-midi-dress-khaki/p114800900",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/010739065?fmt=auto&$background-off-white$&wid=160&hei=213"
+    },
+    {
+      "title": "John Lewis Linen Wide Stripe Shirt, Blue/White",
+      "price": "£55.00",
+      "href": "https://www.johnlewis.com/john-lewis-linen-wide-stripe-shirt-blue-white/p114756640",
+      "image": "https://media.johnlewiscontent.com/i/JohnLewis/011251708?fmt=auto&$background-off-white$&wid=160&hei=213"
+    }
+  ],
+  "promiseText": "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with contemporary living. Discover a unique blend of modern design and enduring quality for your home and wardrobe. From beautifully curated fashion and homeware that expresses your individuality, to the latest technology and beauty favourites, every piece is chosen with care by our Partners. This is our promise to you, and it is anchored by our commitment to never be knowingly undersold on quality, service, and price.\\n\\nNEVER KNOWINGLY UNDERSOLD\\n\\nIt’s more than just the price promise of hundreds of top brands matched against 25 leading retailers. It’s the quality you expect – think homeware designed to stand the test of time, and a minimum 2-year guarantee on all electricals as standard. And it’s the service you can rely on, including Click & Collect from over 16,000 locations, free, easy returns and payment plans.",
+  "newsletter": {
+    "heading": "Be in the know",
+    "description": "Get inspiration, new arrivals and the latest offers to your inbox",
+    "cta": "Sign me up for emails"
+  },
+  "footerColumns": [
+    {
+      "heading": "Help",
+      "items": [
+        "Contact us",
+        "Customer services",
+        "Product support",
+        "Our shops",
+        "Price promise"
+      ]
+    },
+    {
+      "heading": "Delivery",
+      "items": [
+        "Delivery & collection",
+        "Track your order",
+        "Returns & refunds"
+      ]
+    },
+    {
+      "heading": "Shopping",
+      "items": [
+        "Gift Cards & vouchers",
+        "Services",
+        "Buying guides",
+        "My John Lewis",
+        "Basket",
+        "Wish List",
+        "Brands A-Z",
+        "Inspiration",
+        "Offers",
+        "Events"
+      ]
+    },
+    {
+      "heading": "More from us",
+      "items": [
+        "Jobs",
+        "Waitrose & Partners",
+        "About the John Lewis Partnership",
+        "John Lewis for Business",
+        "Happier futures",
+        "Protect+"
+      ]
+    },
+    {
+      "heading": "John Lewis Money",
+      "items": [
+        "Payment plans",
+        "Partnership Credit Card",
+        "Travel money",
+        "Home insurance",
+        "Pet insurance",
+        "Car insurance",
+        "Loans"
+      ]
+    },
+    {
+      "heading": "Terms",
+      "items": [
+        "Terms and conditions",
+        "Secure shopping",
+        "Product recalls and safety notices",
+        "Modern slavery statement",
+        "Privacy notice",
+        "Cookies",
+        "Sustainability",
+        "Accessibility",
+        "Reviews policy"
+      ]
+    }
+  ],
+  "imagePool": [
+    {
+      "src": "https://www.johnlewis.com/header-ui-assets/static/images/john-lewis-partners-f6c40704.svg",
+      "alt": "John Lewis & Partners Home"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20SHOT%2028%20006?fmt=auto&wid=599&sm=aspect&aspect=9:16",
+      "alt": "Low-angle fashion portrait of a model in a cream double-breasted suit and sunglasses on a balcony railing."
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026SUMMERLOOKBOOKDAY2202641830?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Fashion model in pale yellow sleeveless midi dress with ruffle hem, posing in studio, snake-print heels"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/009706862alt4?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Studio portrait of a woman wearing an olive green tie-neck dress with cap sleeves and pockets on a white backdrop"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/012912418?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Model wearing a cobalt blue midi dress with cap sleeves and seam detail, styled with black sandals in studio."
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/114312752?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Model wearing white and navy fascinator hat with bow and netting, paired with an off-shoulder dress for weddings"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/114343975alt1?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Modern living room with mustard sofa, patterned rug, and large windows. Decor accents create a cosy, inviting space."
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/114390680alt1?fmt=auto&wid=200&sm=aspect&aspect=1:1",
+      "alt": "Stack of folded patterned towels on a terracotta floor, with a wicker basket nearby in a cosy bathroom setting."
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026OUTDOORDAY03HERITAGELOUNGE1548?fmt=auto&wid=300&sm=aspect&aspect=1:1",
+      "alt": "Modern outdoor lounge set with white cushions, blue pillows and marble coffee table on a garden patio terrace"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026summerwrapperbikini?fmt=auto&wid=300&sm=aspect&aspect=1:1",
+      "alt": "Fashion beach portrait of woman in blue bikini holding a brown bag, golden-hour sunlight and clear sky"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026OUTDOORDAY01TIMELESSTABLETOP0407?fmt=auto&wid=300&sm=aspect&aspect=1:1",
+      "alt": "Outdoor teak dining table with blue and white ceramic plates, serving bowl, fish platter and glass tumblers"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20SHOT%2009%20082?fmt=auto&wid=300&sm=aspect&aspect=1:1",
+      "alt": "Man in light grey suit standing on outdoor stair balcony, leaning on blue rail under modern architecture, sunny sky"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20DAY%2001%20SHOT%2012%200455%20(1)?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Running shoes, water bottle, massage gun and sports sunglasses on an outdoor court, workout essentials flat lay"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2025_SPR_WRAPPER_MW_SHOT_8_2238_ITGproofedRGB?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "A woman with sleek hair poses against a serene sunset, wearing silver earrings and a strappy top, reflecting elegance."
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20DAY%2001%20SHOT%2010%200421?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Placeholder graphic with “image coming soon” text, indicating product photo or listing image not yet available"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/beauty-arrivals-april-homepage-010426D?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Bobbi Brown makeup and lip gloss on a silver tray floating in a swimming pool with iced cocktails"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/edit-trousers-suit-homepage-040325?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "Fashion model in green suit and blue blouse posing on rocky coastline at sunset, waves and cliffs behind"
+    },
+    {
+      "src": "https://media.johnlewiscontent.com/i/JohnLewis/the-great-outdoors-hp-block-260326?fmt=auto&wid=599&sm=aspect&aspect=1:1",
+      "alt": "A beautifully arranged table with vibrant flowers, candles, ceramics, and glassware. Elegant and colourful setting."
+    }
+  ]
+}

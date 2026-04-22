@@ -1,0 +1,8 @@
+⨯ Another next dev server is already running.
+
+- Local:        http://localhost:3000
+- PID:          76524
+- Dir:          E:\wangzhan\ctf-skills-main\仿制\my-clone
+- Log:          .next\dev\logs\next-development.log
+
+Run taskkill /PID 76524 /F to stop it.

@@ -1,0 +1,9 @@
+
+> ai-website-clone-template@0.3.1 dev
+> next dev --hostname 127.0.0.1 --port 3002
+
+▲ Next.js 16.2.1 (Turbopack)
+- Local:         http://127.0.0.1:3002
+- Network:       http://127.0.0.1:3002
+✓ Ready in 315ms
+[?25h
