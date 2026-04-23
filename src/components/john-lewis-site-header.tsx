@@ -3,29 +3,18 @@
 import Link from "next/link";
 
 import { SiteLink } from "@/components/site-link";
+import { getHeaderNavigationGroups } from "@/lib/navigation-config";
 import { shouldHideLabel, siteRoutes } from "@/lib/site-routes";
 
 const utilityLinks = [
   { label: "My Joheiewisepro", href: "#", underlined: true },
-  { label: "Ways to shop", href: "#", chevron: true },
-  { label: "Help", href: "#", chevron: true },
+  { label: "Ways to shop", href: siteRoutes.category, chevron: true },
+  { label: "Help", href: siteRoutes.contact, chevron: true },
   { label: "Joheiewisepro Money", href: "#", chevron: true },
   { label: "Our stores", href: "#", underlined: true },
 ];
 
-const departmentLinks = [
-  { label: "Women", href: "#" },
-  { label: "Men", href: "#" },
-  { label: "Home & Garden", href: "#" },
-  { label: "Furniture & Lights", href: "#" },
-  { label: "Electricals", href: "#" },
-  { label: "Baby & Kids", href: "#" },
-  { label: "Beauty", href: "#" },
-  { label: "Sport & Travel", href: "#" },
-  { label: "Gifts", href: "#" },
-  { label: "Brands", href: "#" },
-  { label: "Sale & Offers", href: "#" },
-];
+const promoBannerMessage = "FREE Delivery over \u00A329.90 | Spend \u00A399+ today and we'll take 35% OFF your entire basket!";
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -81,139 +70,219 @@ function ChevronDownIcon({ className = "h-4 w-4" }: { className?: string }) {
   );
 }
 
+function BrandLockup({ compact = false }: { compact?: boolean }) {
+  return (
+    <Link href={siteRoutes.home} className="flex items-center justify-center">
+      <img
+        src="/joheiewisepro-logo.svg"
+        alt="Joheiewisepro & Partners"
+        className={compact ? "w-[11rem] h-auto object-contain" : "w-[14.5rem] h-auto object-contain"}
+      />
+    </Link>
+  );
+}
+
 export function JohnLewisSiteHeader() {
+  const navigationGroups = getHeaderNavigationGroups();
+
   return (
     <header className="border-b border-[#ece7df] bg-white text-[#141414]">
-      <div className="hidden border-b border-[#f0ebe4] px-4 py-2 text-[0.82rem] md:block">
-        <div className="jl-shell flex items-center justify-between gap-4">
-          <a
-            href="#"
-            className="text-[0.78rem] uppercase tracking-[0.28em]"
-          >
-            Never Knowingly Undersold
-          </a>
-          <div className="flex items-center gap-5 text-[#4f4942]">
+      <div className="bg-[#123232] px-4 py-[0.42rem] text-white">
+        <div className="jl-header-shell flex items-center justify-center text-[0.7rem] uppercase tracking-[0.18em] text-white/78 md:justify-between">
+          <span className="text-center text-white/88">Never Knowingly Undersold</span>
+          <div className="hidden items-center justify-end gap-x-5 gap-y-2 md:flex">
             {utilityLinks.filter((link) => !shouldHideLabel(link.label)).map((link) => (
               <SiteLink
                 key={link.label}
                 label={link.label}
                 href={link.href}
-                className={`inline-flex items-center gap-1 ${
-                  link.underlined ? "underline underline-offset-4" : ""
-                }`}
+                className={`inline-flex items-center gap-1.5 ${link.underlined ? "underline underline-offset-[0.24rem]" : ""}`}
               >
                 <span>{link.label}</span>
-                {link.chevron ? <ChevronDownIcon className="h-3 w-3 text-[#6d675f]" /> : null}
+                {link.chevron ? <ChevronDownIcon className="h-3.5 w-3.5" /> : null}
               </SiteLink>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="hidden px-4 py-5 md:block">
-        <div className="jl-shell flex items-center gap-10">
-          <Link href={siteRoutes.home} className="shrink-0">
-            <img src="/joheiewisepro-logo.svg" alt="joheiewisepro Logo" className="h-[32px] w-auto object-contain max-w-full" />
-          </Link>
+      <div className="bg-white">
+        <div className="hidden border-b border-[#e7e1d9] px-4 py-4 md:block">
+          <div className="jl-header-shell grid items-center justify-center md:grid-cols-[14.5rem_25.5rem_14.5rem]">
+            <div className="flex w-[14.5rem] shrink-0 justify-center">
+              <BrandLockup />
+            </div>
 
+            <form
+              action="#"
+              className="flex h-[36px] w-[25.5rem] items-center overflow-hidden border border-[#cfc8c0] bg-white"
+            >
+              <button
+                type="submit"
+                aria-label="Search"
+                className="inline-flex h-full items-center justify-center px-4 text-[#141414]"
+              >
+                <SearchIcon className="h-[1rem] w-[1rem]" />
+              </button>
+              <input
+                type="search"
+                name="search-term"
+                placeholder="Search product or brand"
+                className="h-full w-full border-0 bg-transparent px-5 text-[13px] leading-[18px] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
+              />
+            </form>
+
+            <div className="flex w-[16.5rem] shrink-0 items-center justify-end gap-5 pl-6 text-[#141414]">
+              <a
+                href="#"
+                className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
+              >
+                <StoreIcon className="h-[1.08rem] w-[1.08rem]" />
+                <span>Stores</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
+              >
+                <UserIcon className="h-[1.08rem] w-[1.08rem]" />
+                <span>Account</span>
+              </a>
+              <a
+                href="#"
+                className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
+              >
+                <BasketIcon className="h-[1.08rem] w-[1.08rem]" />
+                <span>Basket</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-b border-[#e7e1d9] px-4 py-3 md:hidden">
+          <div className="jl-header-shell flex items-start justify-between gap-4">
+            <BrandLockup compact />
+            <div className="flex items-start gap-4 text-[0.68rem] uppercase tracking-[0.16em] text-[#141414]">
+              <a href="#" className="flex flex-col items-center gap-1">
+                <StoreIcon className="h-5 w-5" />
+                <span>Stores</span>
+              </a>
+              <a href="#" className="flex flex-col items-center gap-1">
+                <UserIcon className="h-5 w-5" />
+                <span>Account</span>
+              </a>
+              <a href="#" className="flex flex-col items-center gap-1">
+                <BasketIcon className="h-5 w-5" />
+                <span>Basket</span>
+              </a>
+              <details className="relative">
+                <summary className="flex cursor-pointer list-none flex-col items-center gap-1">
+                  <MenuIcon className="h-5 w-5" />
+                  <span>Menu</span>
+                </summary>
+                <div className="absolute right-0 top-full z-50 mt-3 w-[min(24rem,calc(100vw-2rem))] rounded-[1.4rem] border border-[#d8d2cb] bg-white p-4 shadow-[0_30px_80px_-50px_rgba(20,20,20,0.45)]">
+                  <div className="space-y-3">
+                    {navigationGroups.map((group) => (
+                      <details key={group.label} className="rounded-[1rem] border border-[#ece7df] px-4 py-3">
+                        <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-[#141414]">
+                          <span className={group.accent ? "text-[#b64a2b]" : ""}>{group.label}</span>
+                          <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
+                        </summary>
+                        <div className="mt-3 grid gap-4">
+                          {group.sections.map((section) => (
+                            <div key={section.heading}>
+                              <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#8c847b]">
+                                {section.heading}
+                              </p>
+                              <div className="mt-2 grid gap-2">
+                                {section.links.map((link) => (
+                                  <Link
+                                    key={link.href}
+                                    href={link.href}
+                                    className="text-sm leading-6 text-[#141414]"
+                                  >
+                                    {link.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
           <form
             action="#"
-            className="flex h-12 flex-1 items-center overflow-hidden rounded-full border border-[#d8d2cb] bg-[#fbfaf7]"
+            className="mt-4 flex h-[2.9rem] items-center overflow-hidden border border-[#cfc8c0] bg-white"
           >
             <button
               type="submit"
               aria-label="Search"
               className="inline-flex h-full items-center justify-center px-4 text-[#141414]"
             >
-              <SearchIcon />
+              <SearchIcon className="h-5 w-5" />
             </button>
             <input
               type="search"
               name="search-term"
               placeholder="Search product or brand"
-              className="h-full w-full border-0 bg-transparent pr-5 text-[0.95rem] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
+              className="h-full w-full border-0 bg-transparent pr-4 text-[0.95rem] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
             />
           </form>
+        </div>
 
-          <div className="flex items-center gap-5 text-sm text-[#141414]">
-            <a href="#" className="jl-header-tool">
-              <StoreIcon />
-              <span>Stores</span>
-            </a>
-            <div className="flex flex-col gap-0.5">
-              <a href="#" className="pl-[1.85rem] text-[0.72rem] text-[#6a635b]">
-                Sign in
-              </a>
-              <a href="#" className="jl-header-tool">
-                <UserIcon />
-                <span>Account</span>
-              </a>
-            </div>
-            <a href="#" className="jl-header-tool">
-              <BasketIcon />
-              <span>Basket</span>
-            </a>
-          </div>
+        <div className="hidden border-b border-[#e7e1d9] px-4 md:block">
+          <nav className="jl-header-shell flex min-w-max items-center justify-center gap-8 py-0 text-[16px] leading-[24px]">
+            {navigationGroups.map((group) => (
+              <div key={group.label} className="group relative">
+                <button
+                  type="button"
+                  className={`jl-header-link inline-flex h-[54px] items-center gap-2 ${
+                    group.accent ? "font-medium text-[#b64a2b]" : "text-[#141414]"
+                  }`}
+                >
+                  <span>{group.label}</span>
+                  <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
+                </button>
+                <div className="invisible absolute left-0 top-full z-50 w-[min(56rem,88vw)] pt-3 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100">
+                  <div className="rounded-[1.5rem] border border-[#ddd8d1] bg-white p-6 shadow-[0_24px_70px_-45px_rgba(20,20,20,0.38)]">
+                    <div className={`grid gap-8 ${group.sections.length > 1 ? "md:grid-cols-2" : "md:grid-cols-1"}`}>
+                      {group.sections.map((section) => (
+                        <div key={section.heading}>
+                          <p className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-[#8c847b]">
+                            {section.heading}
+                          </p>
+                          <div className="mt-4 grid gap-3">
+                            {section.links.map((link) => (
+                              <Link
+                                key={link.href}
+                                href={link.href}
+                                className="text-[0.98rem] leading-6 text-[#141414] transition-colors hover:text-[#5d5750]"
+                              >
+                                {link.label}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </nav>
         </div>
       </div>
 
-      <div className="border-b border-[#ece7df] px-4 py-3 md:hidden">
-        <div className="jl-shell flex items-start justify-between gap-4">
-          <Link href={siteRoutes.home} className="pt-1">
-            <img src="/joheiewisepro-logo.svg" alt="joheiewisepro Logo" className="h-[32px] w-auto object-contain max-w-full" />
-          </Link>
-          <div className="flex items-start gap-4 text-[0.68rem] uppercase tracking-[0.16em] text-[#141414]">
-            <a href="#" className="flex flex-col items-center gap-1">
-              <StoreIcon className="h-5 w-5" />
-              <span>Stores</span>
-            </a>
-            <a href="#" className="flex flex-col items-center gap-1">
-              <UserIcon className="h-5 w-5" />
-              <span>Account</span>
-            </a>
-            <a href="#" className="flex flex-col items-center gap-1">
-              <BasketIcon className="h-5 w-5" />
-              <span>Basket</span>
-            </a>
-            <a href="#" className="flex flex-col items-center gap-1">
-              <MenuIcon className="h-5 w-5" />
-              <span>Menu</span>
-            </a>
+      <div className="bg-black px-4 py-[0.42rem] text-white">
+        <div className="jl-header-shell flex items-center justify-center">
+          <div className="max-w-[72rem] text-center text-[0.86rem] font-medium tracking-[-0.01em]">
+            {promoBannerMessage}
           </div>
         </div>
-        <form
-          action="#"
-          className="mt-4 flex h-12 items-center overflow-hidden rounded-full border border-[#d8d2cb] bg-white"
-        >
-          <button
-            type="submit"
-            aria-label="Search"
-            className="inline-flex h-full items-center justify-center px-4 text-[#141414]"
-          >
-            <SearchIcon className="h-5 w-5" />
-          </button>
-          <input
-            type="search"
-            name="search-term"
-            placeholder="Search product or brand"
-            className="h-full w-full border-0 bg-transparent pr-4 text-[0.95rem] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
-          />
-        </form>
-      </div>
-
-      <div className="hidden overflow-x-auto px-4 md:block">
-        <nav className="jl-shell flex min-w-max items-center gap-6 py-3 text-[0.94rem]">
-          {departmentLinks.map((link) => (
-            <SiteLink
-              key={link.label}
-              label={link.label}
-              href={link.href}
-              className={link.label === "Sale & Offers" ? "font-medium text-[#b64a2b]" : "text-[#141414]"}
-            >
-              {link.label}
-            </SiteLink>
-          ))}
-        </nav>
       </div>
     </header>
   );

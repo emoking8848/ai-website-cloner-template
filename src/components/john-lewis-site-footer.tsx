@@ -95,15 +95,6 @@ const socialLinks: SocialLink[] = [
   { label: "X", href: "https://x.com/jlandpartners", icon: "x" },
 ];
 
-function ArrowRightIcon({ className = "h-4 w-4" }: { className?: string }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[1.8]`}>
-      <path d="M5 12h14" />
-      <path d="m13 6 6 6-6 6" />
-    </svg>
-  );
-}
-
 function SocialIcon({ icon }: { icon: SocialLink["icon"] }) {
   switch (icon) {
     case "facebook":
@@ -150,46 +141,8 @@ function SocialIcon({ icon }: { icon: SocialLink["icon"] }) {
 export function JohnLewisSiteFooter() {
   return (
     <footer className="mt-auto bg-[#102b2b] text-white">
-      <section className="border-t border-white/15 px-4 py-8 sm:py-10">
-        <div className="jl-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:gap-10">
-          <div className="space-y-4">
-            <p className="jl-eyebrow text-white/68">Feedback</p>
-            <h2 className="text-[1.4rem] leading-tight tracking-[-0.03em] sm:text-[1.7rem]">
-              Your comments help us improve our website.
-            </h2>
-            <SiteLink
-              label="Leave feedback"
-              href="#"
-              className="inline-flex items-center gap-2 rounded-full border border-white/55 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#102b2b]"
-            >
-              Leave feedback
-              <ArrowRightIcon />
-            </SiteLink>
-          </div>
-
-          <div className="space-y-4">
-            <p className="jl-eyebrow text-white/68">Need help?</p>
-            <h2 className="text-[1.65rem] leading-tight tracking-[-0.03em] sm:text-[2rem]">
-              Visit customer services for delivery, returns and support.
-            </h2>
-            <p className="max-w-[34rem] text-sm leading-7 text-white/76 sm:text-base">
-              Find answers on orders, collections, product care, delivery options and shopping
-              services, all in one place.
-            </p>
-            <SiteLink
-              label="Visit customer services"
-              href="#"
-              className="inline-flex items-center gap-2 rounded-full border border-white/55 px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-white hover:text-[#102b2b]"
-            >
-              Visit customer services
-              <ArrowRightIcon />
-            </SiteLink>
-          </div>
-        </div>
-      </section>
-
       <section className="border-t border-white/15 px-4 py-3 md:py-8">
-        <div className="jl-shell hidden gap-8 md:grid md:grid-cols-2 xl:grid-cols-6">
+        <div className="jl-footer-shell hidden gap-8 px-4 md:grid md:grid-cols-2 xl:grid-cols-6">
           {footerColumns.filter((column) => !shouldHideHeading(column.heading)).map((column) => (
             <div key={column.heading}>
               <h3 className="text-sm font-medium uppercase tracking-[0.22em] text-white/65">{column.heading}</h3>
@@ -206,7 +159,7 @@ export function JohnLewisSiteFooter() {
           ))}
         </div>
 
-        <div className="jl-shell space-y-2 md:hidden">
+        <div className="jl-footer-shell space-y-2 px-4 md:hidden">
           {footerColumns.filter((column) => !shouldHideHeading(column.heading)).map((column) => (
             <details key={column.heading} className="jl-footer-summary border-b border-white/15 py-3">
               <summary className="cursor-pointer list-none text-sm font-medium uppercase tracking-[0.22em] text-white/80">
@@ -227,7 +180,7 @@ export function JohnLewisSiteFooter() {
       </section>
 
       <section className="border-t border-white/15 px-4 py-6">
-        <div className="jl-shell flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="jl-footer-shell flex flex-col gap-6 px-4 md:flex-row md:items-center md:justify-between">
           <a
             href="#"
             className="text-[1.05rem] uppercase tracking-[0.34em] text-white"
@@ -250,7 +203,7 @@ export function JohnLewisSiteFooter() {
       </section>
 
       <section className="border-t border-white/15 px-4 py-5">
-        <div className="jl-shell space-y-4 text-sm text-white/68">
+        <div className="jl-footer-shell space-y-4 px-4 text-sm text-white/68">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <ul className="hidden flex-wrap gap-x-5 gap-y-2 md:flex">
               {footerTerms.filter((item) => !shouldHideLabel(item.label)).map((item) => (

@@ -1,6 +1,7 @@
 export const siteRoutes = {
   home: "/",
   category: "/category",
+  product: "/product",
   about: "/business",
   contact: "/customer-services/contact-us",
   privacy: "/customer-services/shopping-with-us/privacy-notice",
@@ -8,6 +9,27 @@ export const siteRoutes = {
   delivery: "/customer-services/contact-us",
   returns: "/customer-services/contact-us",
 } as const;
+
+function slugifySegment(value: string) {
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export function getCategoryRoute(...segments: string[]) {
+  const cleanedSegments = segments.map(slugifySegment).filter(Boolean);
+
+  return cleanedSegments.length > 0
+    ? `${siteRoutes.category}/${cleanedSegments.join("/")}`
+    : siteRoutes.category;
+}
+
+export function getProductRoute(id: number | string) {
+  return `${siteRoutes.product}/${id}`;
+}
 
 const routeByLabel = new Map<string, string>([
   ["About Us", siteRoutes.about],
@@ -27,25 +49,25 @@ const routeByLabel = new Map<string, string>([
   ["Returns & refunds", siteRoutes.returns],
   ["Returns & Refunds", siteRoutes.returns],
   ["Ways to shop", siteRoutes.category],
-  ["Women", siteRoutes.category],
-  ["Men", siteRoutes.category],
-  ["Home & Garden", siteRoutes.category],
-  ["Furniture & Lights", siteRoutes.category],
-  ["Electricals", siteRoutes.category],
-  ["Baby & Kids", siteRoutes.category],
-  ["Beauty", siteRoutes.category],
-  ["Sport & Travel", siteRoutes.category],
-  ["Sports & Fitness", siteRoutes.category],
-  ["Holiday Shop", siteRoutes.category],
-  ["Gifts", siteRoutes.category],
-  ["Brands", siteRoutes.category],
-  ["Brands A-Z", siteRoutes.category],
-  ["Sale & Offers", siteRoutes.category],
-  ["Offers", siteRoutes.category],
-  ["Services", siteRoutes.category],
-  ["Buying guides", siteRoutes.category],
-  ["Inspiration", siteRoutes.category],
-  ["Events", siteRoutes.category],
+  ["Women", getCategoryRoute("women")],
+  ["Men", getCategoryRoute("men")],
+  ["Home & Garden", getCategoryRoute("home-and-garden")],
+  ["Furniture & Lights", getCategoryRoute("furniture-and-lights")],
+  ["Electricals", getCategoryRoute("electricals")],
+  ["Baby & Kids", getCategoryRoute("baby-and-kids")],
+  ["Beauty", getCategoryRoute("beauty")],
+  ["Sport & Travel", getCategoryRoute("sport-and-travel")],
+  ["Sports & Fitness", getCategoryRoute("sports-and-fitness")],
+  ["Holiday Shop", getCategoryRoute("holiday-shop")],
+  ["Gifts", getCategoryRoute("gifts")],
+  ["Brands", getCategoryRoute("brands")],
+  ["Brands A-Z", getCategoryRoute("brands", "a-z")],
+  ["Sale & Offers", getCategoryRoute("sale-and-offers")],
+  ["Offers", getCategoryRoute("sale-and-offers")],
+  ["Services", getCategoryRoute("services")],
+  ["Buying guides", getCategoryRoute("buying-guides")],
+  ["Inspiration", getCategoryRoute("inspiration")],
+  ["Events", getCategoryRoute("events")],
   ["Leave feedback", siteRoutes.contact],
   ["Visit customer services", siteRoutes.contact],
 ]);

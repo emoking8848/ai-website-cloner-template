@@ -2,7 +2,10 @@
 
 import Link from "next/link";
 
+import { JohnLewisSiteFooter } from "@/components/john-lewis-site-footer";
+import { JohnLewisSiteHeader } from "@/components/john-lewis-site-header";
 import { SiteLink } from "@/components/site-link";
+import { getCatalogProducts } from "@/lib/catalog-data";
 import { shouldHideHeading, shouldHideLabel, siteRoutes } from "@/lib/site-routes";
 import type {
   JohnLewisFooterColumn,
@@ -432,6 +435,65 @@ const announcementMessages = [
 const brandPromiseExcerpt =
   "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with contemporary living. Discover a unique blend of modern design and enduring quality for your home and wardrobe. From beautifully curated fashion and homeware that expresses your individuality, to the latest technology and beauty favourites, every piece is chosen with care by our Partners. This is our promise to you, and it is anchored by our commitment to never be knowingly undersold on quality, service, and price...";
 
+const homepageProductShelves = [
+  {
+    title: "Women",
+    slug: "new-in-womenswear",
+    products: getCatalogProducts("new-in-womenswear")
+      .filter((product) => product.stockStatus === "instock")
+      .slice(0, 8)
+      .map((product) => ({
+        title: product.title,
+        href: product.wpPermalink ?? product.href,
+        image: product.imageUrl,
+        alt: product.title,
+        price: `\u00A3${product.price}`,
+      })),
+  },
+  {
+    title: "Men",
+    slug: "new-in-men-s-clothing-latest-men-s-fashion",
+    products: getCatalogProducts("new-in-men-s-clothing-latest-men-s-fashion")
+      .filter((product) => product.stockStatus === "instock")
+      .slice(0, 8)
+      .map((product) => ({
+        title: product.title,
+        href: product.wpPermalink ?? product.href,
+        image: product.imageUrl,
+        alt: product.title,
+        price: `\u00A3${product.price}`,
+      })),
+  },
+  {
+    title: "Garden",
+    slug: "new-in-garden",
+    products: getCatalogProducts("new-in-garden")
+      .filter((product) => product.stockStatus === "instock")
+      .slice(0, 8)
+      .map((product) => ({
+        title: product.title,
+        href: product.wpPermalink ?? product.href,
+        image: product.imageUrl,
+        alt: product.title,
+        price: `\u00A3${product.price}`,
+      })),
+  },
+  {
+    title: "Beauty",
+    slug: "new-in-beauty",
+    products: getCatalogProducts("new-in-beauty")
+      .filter((product) => product.stockStatus === "instock")
+      .slice(0, 8)
+      .map((product) => ({
+        title: product.title,
+        href: product.wpPermalink ?? product.href,
+        image: product.imageUrl,
+        alt: product.title,
+        price: `\u00A3${product.price}`,
+      })),
+  },
+].filter((shelf) => shelf.products.length > 0);
+
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[1.8]`}>
@@ -719,180 +781,9 @@ function AppStoreBadges() {
 
 export function JohnLewisHomepage() {
   return (
-    <main className="min-h-screen bg-white text-[#141414]">
-      <header className="bg-white">
-        <div className="hidden bg-[#122b2b] px-4 py-[0.42rem] text-white md:block">
-          <div className="jl-header-shell flex items-center justify-between text-[0.63rem] uppercase tracking-[0.18em] text-white/78">
-            <a
-              href="#"
-              className="w-fit text-white/78 transition-colors hover:text-white"
-            >
-              Never Knowingly Undersold
-            </a>
-            <ul className="flex flex-wrap items-center gap-x-5 gap-y-2">
-              {utilityLinks.filter((link) => !shouldHideLabel(link.label)).map((link) => (
-                <li key={link.label}>
-                  <SiteLink
-                    label={link.label}
-                    href={link.href}
-                    className={`jl-header-link inline-flex items-center gap-1.5 ${
-                      link.underlined ? "underline underline-offset-[0.24rem]" : ""
-                    }`}
-                  >
-                    <span>{link.label}</span>
-                    {link.chevron ? <ChevronDownIcon className="h-3.5 w-3.5" /> : null}
-                  </SiteLink>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        <div className="hidden border-b border-[#e7e1d9] px-4 py-4 md:block">
-          <div className="jl-header-shell grid items-center justify-between gap-10 md:grid-cols-[190px_560px_auto]">
-            <Link href={siteRoutes.home} className="flex items-center justify-start">
-              <img
-                src="/johnlewis-logo-custom-cropped.png"
-                alt="joheiewisepro Logo"
-                className="h-auto w-[190px] object-contain"
-              />
-            </Link>
-
-            <form
-              action="#"
-              className="flex h-[48px] w-[560px] items-center overflow-hidden border border-[#cfc8c0] bg-white"
-            >
-              <button
-                type="submit"
-                aria-label="Search"
-                className="inline-flex h-full items-center justify-center px-4 text-[#141414]"
-              >
-                <SearchIcon className="h-[1.15rem] w-[1.15rem]" />
-              </button>
-              <input
-                type="search"
-                name="search-term"
-                placeholder="Search product or brand"
-                className="h-full w-full border-0 bg-transparent px-5 text-[16px] leading-[19px] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
-              />
-            </form>
-
-            <div className="flex items-center justify-end gap-5 text-[16px] leading-[22px] text-[#141414]">
-              <a href="#" className="jl-header-tool">
-                <StoreIcon className="h-[1.18rem] w-[1.18rem]" />
-                <span>Stores</span>
-              </a>
-              <div className="flex flex-col gap-0.5">
-                <a href="#" className="pl-[1.55rem] text-[12px] leading-[16px] text-[#3f3a34]">
-                  Sign in
-                </a>
-                <a href="#" className="jl-header-tool gap-[0.35rem]">
-                  <UserIcon className="h-[20px] w-[20px]" />
-                  <span>Account</span>
-                </a>
-              </div>
-              <a
-                href="#"
-                aria-label="Wish List"
-                className="jl-icon-button h-[40px] w-[40px] text-[#141414]"
-              >
-                <HeartIcon className="h-[20px] w-[20px]" />
-              </a>
-              <a href="#" className="jl-header-tool gap-[0.35rem]">
-                <BasketIcon className="h-[20px] w-[20px]" />
-                <span>Basket</span>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-b border-[#e7e1d9] px-4 py-3 md:hidden">
-          <div className="jl-header-shell flex items-start justify-between gap-4">
-            <Link href={siteRoutes.home} className="pt-1">
-              <img
-                src="/johnlewis-logo-custom-cropped.png"
-                alt="joheiewisepro Logo"
-                className="h-auto w-[132px] object-contain"
-              />
-            </Link>
-            <div className="flex items-start gap-4 text-[0.68rem] uppercase tracking-[0.16em] text-[#141414]">
-              <a href="#" className="flex flex-col items-center gap-1">
-                <StoreIcon className="h-5 w-5" />
-                <span>Stores</span>
-              </a>
-              <a href="#" className="flex flex-col items-center gap-1">
-                <UserIcon className="h-5 w-5" />
-                <span>Account</span>
-              </a>
-              <a href="#" className="flex flex-col items-center gap-1">
-                <BasketIcon className="h-5 w-5" />
-                <span>Basket</span>
-              </a>
-              <a href="#" className="flex flex-col items-center gap-1">
-                <MenuIcon className="h-5 w-5" />
-                <span>Menu</span>
-              </a>
-            </div>
-          </div>
-          <form
-            action="#"
-            className="mt-4 flex h-[2.9rem] items-center overflow-hidden border border-[#cfc8c0] bg-white"
-          >
-            <button
-              type="submit"
-              aria-label="Search"
-              className="inline-flex h-full items-center justify-center px-4 text-[#141414]"
-            >
-              <SearchIcon className="h-5 w-5" />
-            </button>
-            <input
-              type="search"
-              name="search-term"
-              placeholder="Search product or brand"
-              className="h-full w-full border-0 bg-transparent pr-4 text-[0.95rem] text-[#141414] placeholder:text-[#7e776f] focus:outline-none"
-            />
-          </form>
-        </div>
-
-        <div className="hidden border-b border-[#e7e1d9] px-4 md:block">
-          <nav className="jl-header-shell flex min-w-max items-center gap-8 py-0 text-[16px] leading-[24px]">
-            {departmentLinks.map((link) => (
-              <SiteLink
-                key={link.label}
-                label={link.label}
-                href={link.href}
-                className={`jl-header-link inline-flex h-[54px] items-center ${
-                  link.label === "Sale & Offers" ? "font-medium text-[#b64a2b]" : "text-[#141414]"
-                }`}
-              >
-                {link.label}
-              </SiteLink>
-            ))}
-          </nav>
-        </div>
-
-        <div className="border-b border-black bg-black px-4 py-[0.42rem] text-white">
-          <div className="jl-header-shell flex items-center justify-between gap-4">
-            <button
-              type="button"
-              aria-label="Previous announcement"
-              className="hidden text-white/75 lg:inline-flex"
-            >
-              <CarouselChevronIcon direction="left" className="h-5 w-5" />
-            </button>
-            <div className="flex-1 overflow-hidden text-center text-[0.86rem] font-medium tracking-[-0.01em]">
-              <span>{announcementMessages[0]}</span>
-            </div>
-            <button
-              type="button"
-              aria-label="Next announcement"
-              className="hidden text-white/75 lg:inline-flex"
-            >
-              <CarouselChevronIcon direction="right" className="h-5 w-5" />
-            </button>
-          </div>
-        </div>
-      </header>
+    <>
+      <JohnLewisSiteHeader />
+      <main className="min-h-screen bg-white text-[#141414]">
 
       <section className="px-4 pt-0">
         <div className="jl-shell">
@@ -945,33 +836,18 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:py-10">
-        <div className="jl-shell">
-          <div className="mb-5 flex items-start justify-between gap-4 sm:mb-6">
-            <div>
-              <h2 className="text-[1.9rem] leading-none tracking-[-0.04em] text-[#141414] sm:text-[2.35rem]">
-                Recommended just for you
-              </h2>
-              <p className="mt-3 text-[1.02rem] leading-7 text-[#141414] sm:text-[1.18rem]">
-                We think you&apos;ll like these
-              </p>
-            </div>
-            <div className="hidden items-center gap-2.5 lg:flex" aria-hidden="true">
-              <span className="inline-flex h-10 w-10 items-center justify-center border border-[#ddd7cf] bg-white text-[#9b948c]">
-                <CarouselChevronIcon direction="left" />
-              </span>
-              <span className="inline-flex h-10 w-10 items-center justify-center border border-[#ddd7cf] bg-white text-[#141414]">
-                <CarouselChevronIcon direction="right" />
-              </span>
+      {homepageProductShelves.slice(0, 2).map((shelf) => (
+        <section key={shelf.slug} className="px-4 py-8 sm:py-10">
+          <div className="jl-shell">
+            <SectionHeading title={shelf.title} />
+            <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
+              {shelf.products.map((product) => (
+                <RecommendationCard key={`${shelf.slug}-${product.href}`} product={product} />
+              ))}
             </div>
           </div>
-          <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
-            {recommendationProducts.map((product) => (
-              <RecommendationCard key={product.href} product={product} />
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <section className="px-4 py-8 sm:py-10">
         <div className="jl-shell">
@@ -1014,28 +890,18 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:py-10">
-        <div className="jl-shell">
-          <SectionHeading title="Featured this week" />
-          <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
-            {featuredProducts.map((product) => (
-              <a
-                key={product.title}
-                href={product.href}
-                className="min-w-[11.2rem] snap-start bg-white sm:min-w-[11.7rem] lg:min-w-[12.2rem]"
-              >
-                <div className="overflow-hidden bg-[#f6f3ee]">
-                  <img src={product.image} alt={product.title} className="aspect-[4/5] h-auto w-full object-cover" />
-                </div>
-                <div className="mt-3 space-y-1.5">
-                  <p className="text-[0.84rem] leading-5 text-[#141414]">{product.title}</p>
-                  <p className="text-[0.94rem] font-medium tracking-[-0.015em]">{product.price}</p>
-                </div>
-              </a>
-            ))}
+      {homepageProductShelves.slice(2).map((shelf) => (
+        <section key={shelf.slug} className="px-4 py-8 sm:py-10">
+          <div className="jl-shell">
+            <SectionHeading title={shelf.title} />
+            <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
+              {shelf.products.map((product) => (
+                <RecommendationCard key={`${shelf.slug}-${product.href}`} product={product} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <section className="px-4 py-8 sm:py-10">
         <div className="jl-shell">
@@ -1106,61 +972,8 @@ export function JohnLewisHomepage() {
           </div>
         </div>
       </section>
-
-      <footer className="mt-0 bg-[#102b2b] text-white">
-        <div className="border-t border-white/12 px-4 py-4 md:py-10">
-          <div className="jl-footer-shell hidden gap-8 px-4 md:grid md:grid-cols-2 xl:grid-cols-6">
-            {footerColumns.filter((column) => !shouldHideHeading(column.heading)).map((column) => (
-              <FooterColumn key={column.heading} column={column} />
-            ))}
-          </div>
-          <div className="jl-footer-shell px-4 md:hidden">
-            {footerColumns.filter((column) => !shouldHideHeading(column.heading)).map((column) => (
-              <FooterDisclosure key={column.heading} column={column} />
-            ))}
-          </div>
-        </div>
-
-        <div className="border-t border-white/12 px-4 py-7">
-          <div className="jl-footer-shell flex flex-col gap-6 px-4 md:flex-row md:items-center md:justify-between">
-            <a
-              href="#"
-              className="text-[0.95rem] uppercase tracking-[0.28em] text-white"
-            >
-              Never Knowingly Undersold
-            </a>
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-              {socialLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  aria-label={link.label}
-                  className="inline-flex h-8 w-8 items-center justify-center border border-white/25 text-white/90 transition-colors hover:border-white hover:text-white"
-                >
-                  <SocialIcon icon={link.icon} />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-white/12 px-4 py-5">
-          <div className="jl-footer-shell space-y-4 px-4 text-[0.82rem] text-white/68">
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-              <ul className="hidden flex-wrap gap-x-5 gap-y-2 md:flex">
-                {footerTerms.filter((item) => !shouldHideLabel(item)).map((item) => (
-                  <li key={item}>
-                    <SiteLink label={item} href="#" className="jl-footer-link !text-white/70">
-                      {item}
-                    </SiteLink>
-                  </li>
-                ))}
-              </ul>
-              <p>Copyright (c) Joheiewisepro plc 2001 - 2026</p>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
+      </main>
+      <JohnLewisSiteFooter />
+    </>
   );
 }
