@@ -5,6 +5,8 @@ import Link from "next/link";
 import { JohnLewisSiteFooter } from "@/components/john-lewis-site-footer";
 import { JohnLewisSiteHeader } from "@/components/john-lewis-site-header";
 import { SiteLink } from "@/components/site-link";
+import { getCategoryRoute } from "@/lib/site-routes";
+import type { CatalogProduct } from "@/lib/catalog-data";
 import { getCatalogProducts } from "@/lib/catalog-data";
 import { shouldHideHeading, shouldHideLabel, siteRoutes } from "@/lib/site-routes";
 import type {
@@ -435,13 +437,208 @@ const announcementMessages = [
 const brandPromiseExcerpt =
   "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with contemporary living. Discover a unique blend of modern design and enduring quality for your home and wardrobe. From beautifully curated fashion and homeware that expresses your individuality, to the latest technology and beauty favourites, every piece is chosen with care by our Partners. This is our promise to you, and it is anchored by our commitment to never be knowingly undersold on quality, service, and price...";
 
+const homepageCategorySources = [
+  { label: "Women", slug: "new-in-womenswear", route: getCategoryRoute("women", "new-in-womenswear") },
+  { label: "Men", slug: "new-in-men-s-clothing-latest-men-s-fashion", route: getCategoryRoute("men", "new-in-men-s-clothing-latest-men-s-fashion") },
+  { label: "Garden", slug: "new-in-garden", route: getCategoryRoute("home-and-garden", "new-in-garden") },
+  { label: "Beauty", slug: "new-in-beauty", route: getCategoryRoute("beauty", "new-in-beauty") },
+  { label: "Sport", slug: "sports-equipment-sports-accessories", route: getCategoryRoute("sport-and-travel", "sports-equipment-sports-accessories") },
+  { label: "Gifts", slug: "gifts-for-her-gifts-for-women", route: getCategoryRoute("gifts", "gifts-for-her-gifts-for-women") },
+] as const;
+
+const homepageUsedProductIds = new Set<number>();
+
+function getHomepageFamilyKey(product: CatalogProduct, categorySlug: string) {
+  const normalizedTitle = product.title.toLowerCase();
+
+  if (categorySlug === "new-in-beauty") {
+    return normalizedTitle
+      .split(/\s+/)
+      .slice(0, 2)
+      .join(" ");
+  }
+
+  return normalizedTitle
+    .replace(/\s-\s[^,]+$/g, "")
+    .replace(/,\s.*$/g, "")
+    .trim();
+}
+
+function pickHomepageProducts(categorySlug: string, count: number, allowReuse = false) {
+  const sourceProducts = getCatalogProducts(categorySlug).filter((product) => product.stockStatus === "instock");
+  const picks = [];
+  const usedFamilies = new Set<string>();
+
+  for (const product of sourceProducts) {
+    const familyKey = getHomepageFamilyKey(product, categorySlug);
+
+    if ((allowReuse || !homepageUsedProductIds.has(product.id)) && !usedFamilies.has(familyKey)) {
+      picks.push(product);
+      usedFamilies.add(familyKey);
+      homepageUsedProductIds.add(product.id);
+    }
+
+    if (picks.length === count) {
+      return picks;
+    }
+  }
+
+  for (const product of sourceProducts) {
+    const familyKey = getHomepageFamilyKey(product, categorySlug);
+
+    if (!picks.some((picked) => picked.id === product.id) && !usedFamilies.has(familyKey)) {
+      picks.push(product);
+      usedFamilies.add(familyKey);
+    }
+
+    if (picks.length === count) {
+      return picks;
+    }
+  }
+
+  return picks;
+}
+
+function pickHomepageProductsByBrands(
+  categorySlug: string,
+  count: number,
+  preferredBrands: string[],
+) {
+  const sourceProducts = getCatalogProducts(categorySlug).filter((product) => product.stockStatus === "instock");
+  const picks: CatalogProduct[] = [];
+  const usedFamilies = new Set<string>();
+
+  for (const brand of preferredBrands) {
+    const match = sourceProducts.find((product) => {
+      const familyKey = getHomepageFamilyKey(product, categorySlug);
+
+      return (
+        product.title.toLowerCase().startsWith(brand.toLowerCase()) &&
+        !homepageUsedProductIds.has(product.id) &&
+        !usedFamilies.has(familyKey)
+      );
+    });
+
+    if (match) {
+      picks.push(match);
+      homepageUsedProductIds.add(match.id);
+      usedFamilies.add(getHomepageFamilyKey(match, categorySlug));
+    }
+
+    if (picks.length === count) {
+      return picks;
+    }
+  }
+
+  for (const product of sourceProducts) {
+    const familyKey = getHomepageFamilyKey(product, categorySlug);
+
+    if (!homepageUsedProductIds.has(product.id) && !usedFamilies.has(familyKey)) {
+      picks.push(product);
+      homepageUsedProductIds.add(product.id);
+      usedFamilies.add(familyKey);
+    }
+
+    if (picks.length === count) {
+      return picks;
+    }
+  }
+
+  return picks;
+}
+
+const homepageHeroProduct = pickHomepageProducts("new-in-womenswear", 1, true)[0];
+
+const dynamicHeroCards: JohnLewisPromoCard[] = homepageCategorySources
+  .map((category) => {
+    const product = pickHomepageProducts(category.slug, 1, true)[0];
+
+    if (!product) {
+      return null;
+    }
+
+    return {
+      title: category.label,
+      href: product.wpPermalink ?? product.href,
+      image: product.imageUrl,
+      alt: product.title,
+    };
+  })
+  .filter(Boolean) as JohnLewisPromoCard[];
+
+const dynamicOffers: JohnLewisOffer[] = homepageCategorySources.map((category) => ({
+  badge: `${getCatalogProducts(category.slug).length} items`,
+  label: category.label,
+  href: category.route,
+}));
+
+const dynamicTrendingCards: JohnLewisPromoCard[] = homepageCategorySources
+  .slice(0, 4)
+  .map((category) => {
+    const product = pickHomepageProducts(category.slug, 1)[0];
+
+    if (!product) {
+      return null;
+    }
+
+    return {
+      title: product.title,
+      description: category.label,
+      image: product.imageUrl,
+      href: product.wpPermalink ?? product.href,
+      cta: "View product",
+      alt: product.title,
+    };
+  })
+  .filter(Boolean) as JohnLewisPromoCard[];
+
+const dynamicEditorialCards: JohnLewisPromoCard[] = homepageCategorySources
+  .slice(3, 6)
+  .map((category) => {
+    const product = pickHomepageProducts(category.slug, 1)[0];
+
+    if (!product) {
+      return null;
+    }
+
+    return {
+      title: product.title,
+      description: category.label,
+      image: product.imageUrl,
+      href: product.wpPermalink ?? product.href,
+      cta: "View product",
+      alt: product.title,
+    };
+  })
+  .filter(Boolean) as JohnLewisPromoCard[];
+
+const dynamicStoryCards: JohnLewisPromoCard[] = homepageCategorySources
+  .slice()
+  .reverse()
+  .slice(0, 3)
+  .map((category) => {
+    const product = pickHomepageProducts(category.slug, 1, true)[0];
+
+    if (!product) {
+      return null;
+    }
+
+    return {
+      title: product.title,
+      description: category.label,
+      image: product.imageUrl,
+      href: product.wpPermalink ?? product.href,
+      cta: "View product",
+      alt: product.title,
+    };
+  })
+  .filter(Boolean) as JohnLewisPromoCard[];
+
 const homepageProductShelves = [
   {
     title: "Women",
     slug: "new-in-womenswear",
-    products: getCatalogProducts("new-in-womenswear")
-      .filter((product) => product.stockStatus === "instock")
-      .slice(0, 8)
+    products: pickHomepageProducts("new-in-womenswear", 8)
       .map((product) => ({
         title: product.title,
         href: product.wpPermalink ?? product.href,
@@ -453,9 +650,7 @@ const homepageProductShelves = [
   {
     title: "Men",
     slug: "new-in-men-s-clothing-latest-men-s-fashion",
-    products: getCatalogProducts("new-in-men-s-clothing-latest-men-s-fashion")
-      .filter((product) => product.stockStatus === "instock")
-      .slice(0, 8)
+    products: pickHomepageProducts("new-in-men-s-clothing-latest-men-s-fashion", 8)
       .map((product) => ({
         title: product.title,
         href: product.wpPermalink ?? product.href,
@@ -467,9 +662,7 @@ const homepageProductShelves = [
   {
     title: "Garden",
     slug: "new-in-garden",
-    products: getCatalogProducts("new-in-garden")
-      .filter((product) => product.stockStatus === "instock")
-      .slice(0, 8)
+    products: pickHomepageProducts("new-in-garden", 8)
       .map((product) => ({
         title: product.title,
         href: product.wpPermalink ?? product.href,
@@ -481,9 +674,16 @@ const homepageProductShelves = [
   {
     title: "Beauty",
     slug: "new-in-beauty",
-    products: getCatalogProducts("new-in-beauty")
-      .filter((product) => product.stockStatus === "instock")
-      .slice(0, 8)
+    products: pickHomepageProductsByBrands("new-in-beauty", 8, [
+      "Aesop",
+      "Clinique",
+      "DIOR",
+      "Bobbi",
+      "Chantecaille",
+      "Clarins",
+      "Cowshed",
+      "Body",
+    ])
       .map((product) => ({
         title: product.title,
         href: product.wpPermalink ?? product.href,
@@ -788,33 +988,28 @@ export function JohnLewisHomepage() {
       <section className="px-4 pt-0">
         <div className="jl-shell">
           <a
-            href="#"
+            href={homepageHeroProduct?.wpPermalink ?? homepageHeroProduct?.href ?? siteRoutes.category}
             className="group relative block min-h-[24rem] overflow-hidden bg-[#d9d2c8] sm:min-h-[32rem] lg:min-h-[41rem]"
           >
             <img
-              src="https://media.johnlewiscontent.com/i/JohnLewis/2026%20SUM%20WRAPPER%20SHOT%2028%20006?fmt=auto&wid=1600&sm=aspect&aspect=2:1"
-              alt="Joheiewisepro occasionwear hero"
+              src="/images/home/2026OUTDOORDAY03RUSTICLOUNGE1886ITGproofedCMYK.webp"
+              alt="Joheiewisepro homepage hero"
               className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.01]"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/42 via-black/18 to-transparent" />
             <div className="relative flex h-full max-w-[326px] flex-col justify-end gap-3 px-6 pb-10 pt-8 text-white sm:max-w-[420px] sm:px-8 sm:pb-12 lg:max-w-[620px] lg:px-[44px] lg:pb-[74px] lg:pt-10">
-              <span className="jl-eyebrow text-white/84">Occasionwear</span>
+              <span className="jl-eyebrow text-white/84">Women</span>
               <h1 className="max-w-[326px] text-[24px] leading-[28px] font-medium tracking-normal sm:max-w-[420px] sm:text-[34px] sm:leading-[36px] lg:max-w-[620px] lg:text-[48px] lg:leading-[48px]">
-                Big event in the diary?
+                {homepageHeroProduct?.categoryNames?.[0] ?? "New In Womenswear"}
               </h1>
               <p className="max-w-[326px] font-serif text-[16px] leading-[22px] text-white sm:max-w-[420px] sm:text-[18px] sm:leading-[24px] lg:max-w-[620px] lg:text-[20px] lg:leading-[28px]">
-                We&apos;ve got just the thing for every invite.
+                {homepageHeroProduct?.title ?? "Discover the latest arrivals."}
               </p>
               <span className="jl-underlined-link inline-flex w-fit border-white pt-3 text-[16px] leading-[22px] text-white">
-                Women&apos;s Occasionwear
+                View product
               </span>
             </div>
           </a>
-          <div className="grid grid-cols-3 gap-x-px gap-y-2 bg-white pt-px sm:gap-y-2.5 lg:grid-cols-6">
-            {heroCards.map((card) => (
-              <HeroNavCard key={card.title} card={card} />
-            ))}
-          </div>
         </div>
       </section>
 
@@ -822,7 +1017,7 @@ export function JohnLewisHomepage() {
         <div className="jl-shell">
           <SectionHeading title="Top offers on selected lines" linkLabel="Shop all offers" />
           <div className="grid border-y border-[#d9d2cb] md:grid-cols-2 xl:grid-cols-3">
-            {offers.map((offer) => (
+            {dynamicOffers.map((offer) => (
               <a
                 key={offer.label}
                 href={offer.href}
@@ -853,7 +1048,7 @@ export function JohnLewisHomepage() {
         <div className="jl-shell">
           <SectionHeading title="Trending this week" />
           <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 xl:grid-cols-4">
-            {trendingCards.map((card) => (
+            {dynamicTrendingCards.map((card) => (
               <PromoCard key={card.title} card={card} />
             ))}
           </div>
@@ -864,7 +1059,7 @@ export function JohnLewisHomepage() {
         <div className="jl-shell">
           <SectionHeading title="What's new now" />
           <div className="grid gap-x-5 gap-y-8 lg:grid-cols-3">
-            {editorialCards.map((card) => (
+            {dynamicEditorialCards.map((card) => (
               <a
                 key={card.title}
                 href={card.href}
@@ -908,7 +1103,7 @@ export function JohnLewisHomepage() {
           <SectionHeading title="Stories" linkLabel="Discover more" />
           <p className="-mt-1 mb-5 text-[0.84rem] text-[#141414]">Read, watch and be inspired...</p>
           <div className="grid gap-x-5 gap-y-8 lg:grid-cols-3">
-            {storyCards.map((card) => (
+            {dynamicStoryCards.map((card) => (
               <PromoCard key={card.title} card={card} />
             ))}
           </div>
