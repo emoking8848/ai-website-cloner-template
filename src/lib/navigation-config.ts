@@ -158,13 +158,11 @@ export function getHeaderNavigationGroups(): NavigationMenuGroup[] {
       sections: group.sections
         .map((section) => ({
           heading: section.heading,
-          links: section.slugs
-            .filter((slug) => categoryTermMap[slug] !== undefined)
-            .map((slug) => ({
-              label: getCategoryLabel(slug),
-              href: getCategoryRoute(group.routeSegment, slug),
-              slug,
-            })),
+          links: section.slugs.map((slug) => ({
+            label: getCategoryLabel(slug),
+            href: getCategoryRoute(group.routeSegment, slug),
+            slug,
+          })),
         }))
         .filter((section) => section.links.length > 0),
     }))

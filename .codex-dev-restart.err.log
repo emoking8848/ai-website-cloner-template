@@ -381,3 +381,333 @@ Unable to make a module from invalid JSON
 expected value at line 1 column 1
 
 
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
