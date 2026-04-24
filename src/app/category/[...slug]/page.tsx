@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: CategorySlugPageProps): Promi
   const label = humanizeCategoryLabel(resolvedParams.slug?.join("/"));
 
   return {
-    title: `${label} | Joheiewisepro & Partners | NeverKnowingly`,
-    description: `${label} landing page for Joheiewisepro & Partners.`,
+    title: "NeverKnowingly Undersold",
+    description: "NeverKnowingly Undersold",
   };
 }
 

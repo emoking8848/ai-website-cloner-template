@@ -119,3 +119,4 @@ Unable to make a module from invalid JSON
 EOF while parsing a value at line 1 column 0
 
 
+^C

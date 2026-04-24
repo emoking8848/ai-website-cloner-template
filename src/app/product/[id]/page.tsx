@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) {
     return {
-      title: "Product | Joheiewisepro & Partners | NeverKnowingly",
+      title: "NeverKnowingly Undersold",
     };
   }
 
   return {
-    title: `${product.title} | Joheiewisepro & Partners | NeverKnowingly`,
-    description: product.description,
+    title: "NeverKnowingly Undersold",
+    description: "NeverKnowingly Undersold",
   };
 }
 

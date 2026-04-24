@@ -5,8 +5,8 @@ import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Joheiewisepro & Partners | NeverKnowingly",
-  description: "Joheiewisepro & Partners curated storefront experiences in Next.js.",
+  title: "NeverKnowingly Undersold",
+  description: "NeverKnowingly Undersold",
 };
 
 export default function RootLayout({
