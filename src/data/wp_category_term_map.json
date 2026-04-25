@@ -69,7 +69,7 @@
                                "id":  96,
                                "slug":  "men-s-trending-now",
                                "name":  "Men\u0027s Trending Now",
-                               "count":  50
+                               "count":  48
                            },
     "new-in-baby-toddler-clothes-for-0-3-years":  {
                                                       "id":  97,
@@ -87,7 +87,7 @@
                           "id":  99,
                           "slug":  "new-in-garden",
                           "name":  "New In Garden",
-                          "count":  49
+                          "count":  48
                       },
     "new-in-men-s-clothing-latest-men-s-fashion":  {
                                                        "id":  100,
@@ -111,18 +111,18 @@
                             "id":  103,
                             "slug":  "women-s-dresses",
                             "name":  "Women\u0027s Dresses",
-                            "count":  50
+                            "count":  45
                         },
     "women-s-sports-tops":  {
                                 "id":  104,
                                 "slug":  "women-s-sports-tops",
                                 "name":  "Women\u0027s Sports Tops",
-                                "count":  50
+                                "count":  46
                             },
     "women-s-trending-now":  {
                                  "id":  105,
                                  "slug":  "women-s-trending-now",
                                  "name":  "Women\u0027s Trending Now",
-                                 "count":  50
+                                 "count":  48
                              }
 }
