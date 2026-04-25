@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import { JohnLewisCategoryPage } from "@/components/john-lewis-category-page";
 
 export const metadata: Metadata = {
-  title: "NeverKnowingly Undersold",
-  description: "NeverKnowingly Undersold",
+  title: "Always Competitively Priced",
+  description: "Always Competitively Priced",
 };
 
 export default function CategoryPage() {

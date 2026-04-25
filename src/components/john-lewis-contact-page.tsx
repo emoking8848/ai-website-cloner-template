@@ -158,14 +158,6 @@ const supportCards: SupportCard[] = [
     linkLabel: "Visit Joheiewisepro for Business",
     href: "#",
   },
-  {
-    logo: "https://www.johnlewis.com/customer-services/_next/static/media/logo-waitrose-and-partners.a5388b4d.svg",
-    logoAlt: "Waitrose & Partners",
-    logoClassName: "h-[36px] w-auto md:h-[44px]",
-    description: "Everything we do goes into everything you taste",
-    linkLabel: "Visit Waitrose & Partners",
-    href: "https://www.waitrose.com/",
-  },
 ];
 
 const footerHelpLinks: FooterLink[] = [
@@ -206,7 +198,6 @@ const footerShoppingLinks: FooterLink[] = [
 
 const footerMoreLinks: FooterLink[] = [
   { label: "Jobs", href: "https://www.jlpjobs.com/" },
-  { label: "Waitrose & Partners", href: "https://www.waitrose.com/" },
   {
     label: "About the Joheiewisepro Partnership",
     href: "#",
@@ -426,7 +417,7 @@ function JohnLewisHeader() {
             href="#"
             className="text-[11px] tracking-[0.24em]"
           >
-            NEVER KNOWINGLY UNDERSOLD
+            Always Competitively Priced
           </a>
 
           <nav className="flex items-center gap-6">
@@ -651,7 +642,7 @@ function JohnLewisFooter() {
             href="#"
             className="max-w-[9ch] text-[20px] uppercase tracking-[0.26em] text-white md:max-w-none md:text-[22px]"
           >
-            Never Knowingly Undersold
+            Always Competitively Priced
           </a>
 
           <div className="flex items-center gap-7 md:gap-8">

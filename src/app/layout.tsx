@@ -5,8 +5,8 @@ import { CookieConsentBanner } from "@/components/cookie-consent-banner";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NeverKnowingly Undersold",
-  description: "NeverKnowingly Undersold",
+  title: "Joheiewisepro",
+  description: "Joheiewisepro",
 };
 
 export default function RootLayout({

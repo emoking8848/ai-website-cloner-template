@@ -48,7 +48,6 @@ const footerColumns: FooterColumn[] = [
     heading: "More from us",
     links: [
       { label: "Jobs", href: "https://www.jlpjobs.com/" },
-      { label: "Waitrose & Partners", href: "https://www.waitrose.com/" },
       { label: "About the Joheiewisepro Partnership", href: "#" },
       { label: "Joheiewisepro for Business", href: "#" },
       { label: "Protect+", href: "#" },
@@ -185,7 +184,7 @@ export function JohnLewisSiteFooter() {
             href="#"
             className="text-[1.05rem] uppercase tracking-[0.34em] text-white"
           >
-            Never Knowingly Undersold
+            Always Competitively Priced
           </a>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             {socialLinks.map((link) => (
@@ -214,7 +213,7 @@ export function JohnLewisSiteFooter() {
                 </li>
               ))}
             </ul>
-            <p>Copyright (c) Joheiewisepro plc 2001 - 2026</p>
+            <p>Copyright ? 2024 [MyOriginalBrand] Ltd. All rights reserved.</p>
           </div>
         </div>
       </section>

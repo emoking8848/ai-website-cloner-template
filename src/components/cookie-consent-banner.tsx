@@ -1,18 +1,27 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const cookieConsentStorageKey = "joheiewisepro-cookie-consent";
 
 export function CookieConsentBanner() {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") {
+      return false;
+    }
 
-  useEffect(() => {
-    setVisible(window.localStorage.getItem(cookieConsentStorageKey) === null);
-  }, []);
+    return window.localStorage.getItem(cookieConsentStorageKey) === null;
+  });
 
   const handleChoice = (value: "allow" | "reject") => {
     window.localStorage.setItem(cookieConsentStorageKey, value);
+
+    if (value === "allow") {
+      document.cookie = `${cookieConsentStorageKey}=allow; path=/; max-age=31536000; samesite=lax`;
+    } else {
+      document.cookie = `${cookieConsentStorageKey}=; path=/; max-age=0; samesite=lax`;
+    }
+
     setVisible(false);
   };
 

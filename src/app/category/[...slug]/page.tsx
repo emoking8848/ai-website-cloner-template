@@ -14,8 +14,8 @@ export async function generateMetadata({ params }: CategorySlugPageProps): Promi
   const label = humanizeCategoryLabel(resolvedParams.slug?.join("/"));
 
   return {
-    title: "NeverKnowingly Undersold",
-    description: "NeverKnowingly Undersold",
+    title: "Always Competitively Priced",
+    description: "Always Competitively Priced",
   };
 }
 

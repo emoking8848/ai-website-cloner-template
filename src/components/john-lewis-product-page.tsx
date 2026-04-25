@@ -288,7 +288,7 @@ const footerColumns: FooterColumn[] = [
   },
   {
     heading: "More from us",
-    items: ["Jobs", "Waitrose & Partners", "About the Joheiewisepro Partnership", "Joheiewisepro for Business", "Happier futures", "Protect+"],
+    items: ["Jobs", "About the Joheiewisepro Partnership", "Joheiewisepro for Business", "Happier futures", "Protect+"],
   },
   {
     heading: "Joheiewisepro Money",
@@ -540,7 +540,7 @@ export function JohnLewisProductPage() {
       <header className="bg-white">
         <div className="hidden bg-[#123232] text-white md:block">
           <div className="jl-shell flex items-center justify-between px-4 py-2 text-[0.8rem]">
-            <span className="tracking-[0.35em] text-white/88">NEVER KNOWINGLY UNDERSOLD</span>
+            <span className="tracking-[0.35em] text-white/88">Always Competitively Priced</span>
             <ul className="flex items-center gap-6">
               {utilityLinks.filter((link) => !shouldHideLabel(link.label)).map((link) => (
                 <li key={link.label}>
@@ -1172,7 +1172,7 @@ export function JohnLewisProductPage() {
 
         <div className="border-b border-white/15 px-4 py-8">
           <div className="jl-shell flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-            <p className="text-[1.15rem] tracking-[0.3em] text-white sm:text-[1.2rem]">NEVER KNOWINGLY UNDERSOLD</p>
+            <p className="text-[1.15rem] tracking-[0.3em] text-white sm:text-[1.2rem]">Always Competitively Priced</p>
             <div className="flex items-center gap-7">
               {socialLinks.map((link) => (
                 <a key={link.label} href={link.href} aria-label={link.label} className="text-white">

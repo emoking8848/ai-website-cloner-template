@@ -14,7 +14,7 @@ const utilityLinks = [
   { label: "Our stores", href: "#", underlined: true },
 ];
 
-const promoBannerMessage = "FREE Delivery over \u00A329.90 | Spend \u00A399+ today and we'll take 35% OFF your entire basket!";
+const promoBannerMessage = "Free UK Delivery on orders over £50";
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -75,7 +75,7 @@ function BrandLockup({ compact = false }: { compact?: boolean }) {
     <Link href={siteRoutes.home} className="flex items-center justify-center">
       <img
         src="/joheiewisepro-logo.svg"
-        alt="Joheiewisepro & Partners"
+        alt="Joheiewisepro"
         className={compact ? "w-[11rem] h-auto object-contain" : "w-[14.5rem] h-auto object-contain"}
       />
     </Link>
@@ -89,7 +89,7 @@ export function JohnLewisSiteHeader() {
     <header className="border-b border-[#ece7df] bg-white text-[#141414]">
       <div className="bg-[#123232] px-4 py-[0.42rem] text-white">
         <div className="jl-header-shell flex items-center justify-center text-[0.7rem] uppercase tracking-[0.18em] text-white/78 md:justify-between">
-          <span className="text-center text-white/88">Never Knowingly Undersold</span>
+          <span className="text-center text-white/88">Always Competitively Priced</span>
           <div className="hidden items-center justify-end gap-x-5 gap-y-2 md:flex">
             {utilityLinks.filter((link) => !shouldHideLabel(link.label)).map((link) => (
               <SiteLink

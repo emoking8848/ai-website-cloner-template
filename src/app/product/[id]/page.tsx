@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
   if (!product) {
     return {
-      title: "NeverKnowingly Undersold",
+      title: "Always Competitively Priced",
     };
   }
 
   return {
-    title: "NeverKnowingly Undersold",
-    description: "NeverKnowingly Undersold",
+    title: "Always Competitively Priced",
+    description: "Always Competitively Priced",
   };
 }
 

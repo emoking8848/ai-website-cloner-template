@@ -377,7 +377,6 @@ const footerColumns: JohnLewisFooterColumn[] = [
     heading: "More from us",
     items: [
       "Jobs",
-      "Waitrose & Partners",
       "About the Joheiewisepro Partnership",
       "Joheiewisepro for Business",
       "Happier futures",
@@ -435,7 +434,7 @@ const announcementMessages = [
 ];
 
 const brandPromiseExcerpt =
-  "Proudly shaping British life for over 150 years, John Lewis blends timeless tradition with contemporary living. Discover a unique blend of modern design and enduring quality for your home and wardrobe. From beautifully curated fashion and homeware that expresses your individuality, to the latest technology and beauty favourites, every piece is chosen with care by our Partners. This is our promise to you, and it is anchored by our commitment to never be knowingly undersold on quality, service, and price...";
+  "We are a modern lifestyle brand dedicated to providing high-quality home and fashion essentials for everyday living. Our collections bring together practical design, reliable materials, and thoughtful details to help customers create comfortable spaces, refresh wardrobes, and shop with confidence across carefully selected products.";
 
 const homepageCategorySources = [
   { label: "Women", slug: "new-in-womenswear", route: getCategoryRoute("women", "new-in-womenswear") },
@@ -948,36 +947,6 @@ function FooterDisclosure({ column }: { column: JohnLewisFooterColumn }) {
   );
 }
 
-function AppQrCode() {
-  return (
-    <img
-      src="https://api.qrserver.com/v1/create-qr-code/?size=80x80&data=https%3A%2F%2Fwww.johnlewis.com%2Fcustomer-services%2Fshopping-with-us%2Four-apps"
-      alt="John Lewis app QR code"
-      className="h-20 w-20 bg-white p-[3px]"
-    />
-  );
-}
-
-function AppStoreBadges() {
-  return (
-    <div className="flex items-center gap-3">
-      <a href="https://apps.apple.com/gb/app/john-lewis-partners/id486502369">
-        <img
-          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"
-          alt="Download on the App Store"
-          className="h-10 w-auto"
-        />
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=com.johnlewis.android&hl=en">
-        <img
-          src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-          alt="Get it on Google Play"
-          className="h-10 w-auto"
-        />
-      </a>
-    </div>
-  );
-}
 
 export function JohnLewisHomepage() {
   return (
@@ -1139,7 +1108,7 @@ export function JohnLewisHomepage() {
       <section className="border-b border-white bg-[#102b2b] px-4 text-white">
         <div className="jl-footer-shell relative flex flex-wrap px-4 py-6 md:px-8">
           <div className="hidden md:block absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-white" />
-          <div className="w-full border-b border-white px-0 py-6 md:w-1/2 md:border-b-0 md:pr-8">
+          <div className="w-full px-0 py-6 md:w-1/2 md:border-b-0 md:pr-8">
             <p className="jl-eyebrow text-white">Feedback</p>
             <p className="mt-4 text-[20px] font-semibold leading-[28px] text-white">
               Your comments help us improve our website
@@ -1151,19 +1120,11 @@ export function JohnLewisHomepage() {
               Leave feedback
             </a>
           </div>
-          <div className="hidden w-full px-0 py-6 md:block md:w-1/2 md:pl-12">
-            <div className="flex items-center gap-4">
-              <AppQrCode />
-              <a href="#" className="text-[20px] font-semibold leading-[28px] text-white">
-                John Lewis App
-              </a>
-            </div>
-          </div>
-          <div className="w-full px-0 py-6 md:hidden">
-            <p className="jl-eyebrow text-white">Download the John Lewis app</p>
-            <div className="mt-4">
-              <AppStoreBadges />
-            </div>
+          <div className="w-full px-0 py-6 md:w-1/2 md:pl-12">
+            <p className="jl-eyebrow text-white">Thank you</p>
+            <p className="mt-4 text-[20px] font-semibold leading-[28px] text-white">
+              Thank you for your purchase. We truly appreciate your support and hope you enjoy your order.
+            </p>
           </div>
         </div>
       </section>

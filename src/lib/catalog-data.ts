@@ -159,7 +159,7 @@ function buildDescription(item: RawWpSyncItem, fallbackTitle: string, fallbackSk
 
   const skuSuffix = fallbackSku.length > 0 ? ` SKU: ${fallbackSku}.` : "";
 
-  return `${fallbackTitle} is part of the current Joheiewisepro & Partners edit.${skuSuffix} Availability, pricing and imagery are synced from the latest local product handoff.`;
+  return `${fallbackTitle} is part of the current Joheiewisepro edit.${skuSuffix} Availability, pricing and imagery are synced from the latest local product handoff.`;
 }
 
 function getCategoryDisplayName(slug: string) {
