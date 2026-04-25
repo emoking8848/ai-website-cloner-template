@@ -850,7 +850,7 @@ function PromoCard({ card }: { card: JohnLewisPromoCard }) {
   return (
     <a
       href={card.href}
-      className="group block bg-white"
+      className="group flex h-full flex-col bg-white"
     >
       <div className="aspect-square overflow-hidden bg-[#f4f1ea]">
         <img
@@ -859,14 +859,14 @@ function PromoCard({ card }: { card: JohnLewisPromoCard }) {
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]"
         />
       </div>
-      <div className="space-y-1.5 pt-3">
-        <p className="text-[0.92rem] leading-5 tracking-[-0.012em] text-[#141414] sm:text-[0.95rem]">
+      <div className="flex flex-1 flex-col space-y-1.5 pt-3">
+        <p className="min-h-10 text-[0.92rem] leading-5 tracking-[-0.012em] text-[#141414] sm:text-[0.95rem]">
           {card.title}
         </p>
         {card.description ? (
           <p className="max-w-[28rem] text-[0.82rem] leading-5 text-[#3f3a34]">{card.description}</p>
         ) : null}
-        {card.cta ? <span className="jl-underlined-link inline-flex pb-[0.12rem] text-[0.76rem] uppercase tracking-[0.12em]">{card.cta}</span> : null}
+        {card.cta ? <span className="jl-underlined-link mt-auto inline-flex w-fit pb-[0.12rem] text-[0.76rem] uppercase tracking-[0.12em]">{card.cta}</span> : null}
       </div>
     </a>
   );
@@ -893,18 +893,18 @@ function RecommendationCard({ product }: { product: JohnLewisRecommendationProdu
   return (
     <a
       href={product.href}
-      className="group min-w-[13.4rem] snap-start sm:min-w-[14rem] lg:min-w-[14.5rem]"
+      className="group flex h-full w-full flex-col"
     >
-      <div className="overflow-hidden bg-[#f4f1ea]">
+      <div className="aspect-[3/4] w-full overflow-hidden bg-[#f4f1ea]">
         <img
           src={product.image}
           alt={product.alt}
-          className="aspect-[5/6] h-auto w-full object-cover transition-transform duration-500 group-hover:scale-[1.015]"
+          className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-[1.015]"
         />
       </div>
-      <div className="space-y-1.5 pt-3">
-        <p className="text-[0.88rem] leading-5 tracking-[-0.012em] text-[#141414]">{product.title}</p>
-        <p className="text-[0.95rem] font-medium tracking-[-0.015em] text-[#141414]">{product.price}</p>
+      <div className="flex flex-1 flex-col space-y-1.5 pt-3">
+        <p className="h-10 overflow-hidden text-[0.88rem] leading-5 tracking-[-0.012em] text-[#141414]">{product.title}</p>
+        <p className="mt-auto text-[0.95rem] font-medium tracking-[-0.015em] text-[#141414]">{product.price}</p>
       </div>
     </a>
   );
@@ -958,7 +958,7 @@ export function JohnLewisHomepage() {
         <div className="jl-shell">
           <a
             href={homepageHeroProduct?.wpPermalink ?? homepageHeroProduct?.href ?? siteRoutes.category}
-            className="group relative block min-h-[24rem] overflow-hidden bg-[#d9d2c8] sm:min-h-[32rem] lg:min-h-[41rem]"
+            className="group relative block min-h-[24rem] overflow-hidden bg-[#d9d2c8] sm:min-h-[32rem] lg:min-h-[38rem]"
           >
             <img
               src="/images/home/2026OUTDOORDAY03RUSTICLOUNGE1886ITGproofedCMYK.webp"
@@ -982,15 +982,15 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:py-10">
+      <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
           <SectionHeading title="Top offers on selected lines" linkLabel="Shop all offers" />
-          <div className="grid border-y border-[#d9d2cb] md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid overflow-hidden border border-[#d9d2cb] bg-white md:grid-cols-2 xl:grid-cols-3">
             {dynamicOffers.map((offer) => (
               <a
                 key={offer.label}
                 href={offer.href}
-                className="border-b border-r border-[#d9d2cb] bg-white px-5 py-4 transition-colors hover:bg-[#faf8f5] xl:[&:nth-child(3n)]:border-r-0 md:[&:nth-child(2n)]:xl:border-r"
+                className="min-h-[6rem] border-b border-r border-[#d9d2cb] bg-white px-6 py-5 transition-colors hover:bg-[#faf8f5] xl:[&:nth-child(3n)]:border-r-0 md:[&:nth-child(2n)]:xl:border-r"
               >
                 <p className="text-[20px] leading-[28px] text-[#141414]">{offer.badge}</p>
                 <p className="mt-1 font-serif text-[20px] leading-[28px] text-[#141414]">{offer.label}</p>
@@ -1000,20 +1000,7 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      {homepageProductShelves.slice(0, 2).map((shelf) => (
-        <section key={shelf.slug} className="px-4 py-8 sm:py-10">
-          <div className="jl-shell">
-            <SectionHeading title={shelf.title} />
-            <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
-              {shelf.products.map((product) => (
-                <RecommendationCard key={`${shelf.slug}-${product.href}`} product={product} />
-              ))}
-            </div>
-          </div>
-        </section>
-      ))}
-
-      <section className="px-4 py-8 sm:py-10">
+      <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
           <SectionHeading title="Trending this week" />
           <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 xl:grid-cols-4">
@@ -1024,7 +1011,7 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      <section className="px-4 py-8 sm:py-10">
+      <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
           <SectionHeading title="What's new now" />
           <div className="grid gap-x-5 gap-y-8 lg:grid-cols-3">
@@ -1054,11 +1041,11 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      {homepageProductShelves.slice(2).map((shelf) => (
-        <section key={shelf.slug} className="px-4 py-8 sm:py-10">
+      {homepageProductShelves.map((shelf) => (
+        <section key={shelf.slug} className="px-4 py-10 sm:py-12">
           <div className="jl-shell">
             <SectionHeading title={shelf.title} />
-            <div className="jl-hide-scrollbar flex snap-x gap-4 overflow-x-auto pb-2">
+            <div className="grid grid-cols-2 items-stretch gap-x-4 gap-y-8 sm:grid-cols-3 lg:grid-cols-4">
               {shelf.products.map((product) => (
                 <RecommendationCard key={`${shelf.slug}-${product.href}`} product={product} />
               ))}
@@ -1067,7 +1054,7 @@ export function JohnLewisHomepage() {
         </section>
       ))}
 
-      <section className="px-4 py-8 sm:py-10">
+      <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
           <SectionHeading title="Stories" linkLabel="Discover more" />
           <p className="-mt-1 mb-5 text-[0.84rem] text-[#141414]">Read, watch and be inspired...</p>

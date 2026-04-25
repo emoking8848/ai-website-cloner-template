@@ -23,6 +23,18 @@
                       "name":  "Furniture",
                       "count":  0
                   },
+    "lighting":  {
+                     "id":  40,
+                     "slug":  "lighting",
+                     "name":  "Lighting",
+                     "count":  0
+                 },
+    "toys":  {
+                 "id":  49,
+                 "slug":  "toys",
+                 "name":  "Toys",
+                 "count":  0
+             },
     "garden-table-chairs-garden-furniture-sets":  {
                                                       "id":  91,
                                                       "slug":  "garden-table-chairs-garden-furniture-sets",
@@ -50,15 +62,9 @@
     "john-lewis-men-s-must-haves":  {
                                         "id":  95,
                                         "slug":  "john-lewis-men-s-must-haves",
-                                        "name":  "Joheiewisepro Men\u0027s Must Haves",
+                                        "name":  "[Joheiewisepro] Men\u0027s Must Haves",
                                         "count":  50
                                     },
-    "lighting":  {
-                     "id":  40,
-                     "slug":  "lighting",
-                     "name":  "Lighting",
-                     "count":  0
-                 },
     "men-s-trending-now":  {
                                "id":  96,
                                "slug":  "men-s-trending-now",
@@ -81,7 +87,7 @@
                           "id":  99,
                           "slug":  "new-in-garden",
                           "name":  "New In Garden",
-                          "count":  50
+                          "count":  49
                       },
     "new-in-men-s-clothing-latest-men-s-fashion":  {
                                                        "id":  100,
@@ -101,12 +107,6 @@
                                                 "name":  "Sports Equipment | Sports Accessories",
                                                 "count":  50
                                             },
-    "toys":  {
-                 "id":  49,
-                 "slug":  "toys",
-                 "name":  "Toys",
-                 "count":  0
-             },
     "women-s-dresses":  {
                             "id":  103,
                             "slug":  "women-s-dresses",

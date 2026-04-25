@@ -9,3 +9,135 @@ module.exports = {
 }
 
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⚠ Blocked cross-origin request to Next.js dev resource /__nextjs_original-stack-frames from "127.0.0.1".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['127.0.0.1'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+
+⨯ ./src/data/wp_category_term_map.json:1:1
+Unable to make a module from invalid JSON
+[31m[1m>[0m [90m1 |[0m ﻿{
+  [90m  |[0m [31m[1m^[0m
+  [90m2 |[0m     [32m"accessories"[0m:  {
+  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
+  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+
+expected value at line 1 column 1
+
+

@@ -43,7 +43,7 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
 
         <section className="px-4 py-10 sm:py-14">
           <div className="jl-shell">
-            <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+            <div className="grid auto-rows-fr grid-cols-2 items-stretch gap-6 md:grid-cols-4">
               {products.map((product) => (
                 <article
                   key={product.id}
@@ -56,14 +56,14 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
                     className="block overflow-hidden bg-[#f4efe8]"
                     aria-label={`Open ${product.title}`}
                   >
-                    <div className="aspect-[4/5] bg-[#f4efe8] group-hover:opacity-90">
+                    <div className="aspect-[3/4] w-full overflow-hidden bg-[#f4efe8] group-hover:opacity-90">
                       <Image
                         src={product.imageUrl}
                         alt={product.title}
                         width={400}
                         height={500}
                         unoptimized={true}
-                        className="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]"
+                        className="block h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]"
                       />
                     </div>
                   </a>
@@ -85,12 +85,12 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
                     </div>
 
                     <a href={product.wpPermalink ?? product.href} className="block">
-                      <h2 className="min-h-[3rem] text-sm font-medium leading-6 text-[#141414] transition-colors hover:text-[#5d5750]">
+                      <h2 className="h-[4.5rem] overflow-hidden text-sm font-medium leading-6 text-[#141414] transition-colors hover:text-[#5d5750]">
                         {product.title}
                       </h2>
                     </a>
 
-                    <p className="text-base font-semibold text-[#141414]">
+                    <p className="mt-auto text-base font-semibold text-[#141414]">
                       {formatPrice(product.price)}
                     </p>
 
