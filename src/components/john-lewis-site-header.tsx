@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+﻿/* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link";
 
@@ -7,14 +7,14 @@ import { getHeaderNavigationGroups } from "@/lib/navigation-config";
 import { shouldHideLabel, siteRoutes } from "@/lib/site-routes";
 
 const utilityLinks = [
-  { label: "My Joheiewisepro", href: "#", underlined: true },
+  { label: "My Joheiewisepro", href: siteRoutes.login, underlined: true },
   { label: "Ways to shop", href: siteRoutes.category, chevron: true },
   { label: "Help", href: siteRoutes.contact, chevron: true },
   { label: "Joheiewisepro Money", href: "#", chevron: true },
-  { label: "Our stores", href: "#", underlined: true },
+  { label: "Our stores", href: siteRoutes.popularProducts, underlined: true },
 ];
 
-const promoBannerMessage = "Free UK Delivery on orders over £50";
+const promoBannerMessage = "Free UK Delivery on orders over 拢50";
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -89,7 +89,7 @@ export function JohnLewisSiteHeader() {
     <header className="border-b border-[#ece7df] bg-white text-[#141414]">
       <div className="bg-[#123232] px-4 py-[0.42rem] text-white">
         <div className="jl-header-shell flex items-center justify-center text-[0.7rem] uppercase tracking-[0.18em] text-white/78 md:justify-between">
-          <span className="text-center text-white/88">Always Competitively Priced</span>
+          <span className="text-center text-white/88">Never Knowingly Undersold</span>
           <div className="hidden items-center justify-end gap-x-5 gap-y-2 md:flex">
             {utilityLinks.filter((link) => !shouldHideLabel(link.label)).map((link) => (
               <SiteLink
@@ -134,21 +134,21 @@ export function JohnLewisSiteHeader() {
 
             <div className="flex w-[16.5rem] shrink-0 items-center justify-end gap-5 pl-6 text-[#141414]">
               <a
-                href="#"
+                href={siteRoutes.popularProducts}
                 className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
               >
                 <StoreIcon className="h-[1.08rem] w-[1.08rem]" />
                 <span>Stores</span>
               </a>
               <a
-                href="#"
+                href={siteRoutes.login}
                 className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
               >
                 <UserIcon className="h-[1.08rem] w-[1.08rem]" />
                 <span>Account</span>
               </a>
               <a
-                href="#"
+                href={siteRoutes.cart}
                 className="inline-flex items-center gap-[0.38rem] text-[14px] font-medium leading-none tracking-[-0.01em] text-[#141414] transition-colors hover:text-[#5b544d]"
               >
                 <BasketIcon className="h-[1.08rem] w-[1.08rem]" />
@@ -162,15 +162,15 @@ export function JohnLewisSiteHeader() {
           <div className="jl-header-shell flex items-start justify-between gap-4">
             <BrandLockup compact />
             <div className="flex items-start gap-4 text-[0.68rem] uppercase tracking-[0.16em] text-[#141414]">
-              <a href="#" className="flex flex-col items-center gap-1">
+              <a href={siteRoutes.popularProducts} className="flex flex-col items-center gap-1">
                 <StoreIcon className="h-5 w-5" />
                 <span>Stores</span>
               </a>
-              <a href="#" className="flex flex-col items-center gap-1">
+              <a href={siteRoutes.login} className="flex flex-col items-center gap-1">
                 <UserIcon className="h-5 w-5" />
                 <span>Account</span>
               </a>
-              <a href="#" className="flex flex-col items-center gap-1">
+              <a href={siteRoutes.cart} className="flex flex-col items-center gap-1">
                 <BasketIcon className="h-5 w-5" />
                 <span>Basket</span>
               </a>
@@ -182,32 +182,42 @@ export function JohnLewisSiteHeader() {
                 <div className="absolute right-0 top-full z-50 mt-3 w-[min(24rem,calc(100vw-2rem))] rounded-[1.4rem] border border-[#d8d2cb] bg-white p-4 shadow-[0_30px_80px_-50px_rgba(20,20,20,0.45)]">
                   <div className="space-y-3">
                     {navigationGroups.map((group) => (
-                      <details key={group.label} className="rounded-[1rem] border border-[#ece7df] px-4 py-3">
-                        <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-[#141414]">
-                          <span className={group.accent ? "text-[#b64a2b]" : ""}>{group.label}</span>
-                          <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
-                        </summary>
-                        <div className="mt-3 grid gap-4">
-                          {group.sections.map((section) => (
-                            <div key={section.heading}>
-                              <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#8c847b]">
-                                {section.heading}
-                              </p>
-                              <div className="mt-2 grid gap-2">
-                                {section.links.map((link) => (
-                                  <Link
-                                    key={link.href}
-                                    href={link.href}
-                                    className="text-sm leading-6 text-[#141414]"
-                                  >
-                                    {link.label}
-                                  </Link>
-                                ))}
+                      group.href ? (
+                        <Link
+                          key={group.label}
+                          href={group.href}
+                          className="flex rounded-[1rem] border border-[#ece7df] px-4 py-3 text-sm font-medium text-[#141414] transition-colors hover:bg-[#fbfaf7]"
+                        >
+                          {group.label}
+                        </Link>
+                      ) : (
+                        <details key={group.label} className="rounded-[1rem] border border-[#ece7df] px-4 py-3">
+                          <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-[#141414]">
+                            <span className={group.accent ? "text-[#b64a2b]" : ""}>{group.label}</span>
+                            <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
+                          </summary>
+                          <div className="mt-3 grid gap-4">
+                            {group.sections.map((section) => (
+                              <div key={section.heading}>
+                                <p className="text-[0.68rem] font-medium uppercase tracking-[0.18em] text-[#8c847b]">
+                                  {section.heading}
+                                </p>
+                                <div className="mt-2 grid gap-2">
+                                  {section.links.map((link) => (
+                                    <Link
+                                      key={link.href}
+                                      href={link.href}
+                                      className="text-sm leading-6 text-[#141414]"
+                                    >
+                                      {link.label}
+                                    </Link>
+                                  ))}
+                                </div>
                               </div>
-                            </div>
-                          ))}
-                        </div>
-                      </details>
+                            ))}
+                          </div>
+                        </details>
+                      )
                     ))}
                   </div>
                 </div>
@@ -235,43 +245,55 @@ export function JohnLewisSiteHeader() {
         </div>
 
         <div className="hidden border-b border-[#e7e1d9] px-4 md:block">
-          <nav className="jl-header-shell flex min-w-max items-center justify-center gap-8 py-0 text-[16px] leading-[24px]">
+          <nav className="jl-header-shell flex min-w-max items-center justify-center gap-5 py-0 text-[14px] leading-[22px] xl:gap-7">
             {navigationGroups.map((group) => (
-              <div key={group.label} className="group relative">
-                <button
-                  type="button"
-                  className={`jl-header-link inline-flex h-[54px] items-center gap-2 ${
+              group.href ? (
+                <Link
+                  key={group.label}
+                  href={group.href}
+                  className={`jl-header-link inline-flex h-[54px] items-center ${
                     group.accent ? "font-medium text-[#b64a2b]" : "text-[#141414]"
                   }`}
                 >
-                  <span>{group.label}</span>
-                  <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
-                </button>
-                <div className="invisible absolute left-0 top-full z-50 w-[min(56rem,88vw)] pt-3 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100">
-                  <div className="rounded-[1.5rem] border border-[#ddd8d1] bg-white p-6 shadow-[0_24px_70px_-45px_rgba(20,20,20,0.38)]">
-                    <div className={`grid gap-8 ${group.sections.length > 1 ? "md:grid-cols-2" : "md:grid-cols-1"}`}>
-                      {group.sections.map((section) => (
-                        <div key={section.heading}>
-                          <p className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-[#8c847b]">
-                            {section.heading}
-                          </p>
-                          <div className="mt-4 grid gap-3">
-                            {section.links.map((link) => (
-                              <Link
-                                key={link.href}
-                                href={link.href}
-                                className="text-[0.98rem] leading-6 text-[#141414] transition-colors hover:text-[#5d5750]"
-                              >
-                                {link.label}
-                              </Link>
-                            ))}
+                  {group.label}
+                </Link>
+              ) : (
+                <div key={group.label} className="group relative">
+                  <button
+                    type="button"
+                    className={`jl-header-link inline-flex h-[54px] items-center gap-2 ${
+                      group.accent ? "font-medium text-[#b64a2b]" : "text-[#141414]"
+                    }`}
+                  >
+                    <span>{group.label}</span>
+                    <ChevronDownIcon className="h-3.5 w-3.5 text-[#6d675f]" />
+                  </button>
+                  <div className="invisible absolute left-0 top-full z-50 w-[min(56rem,88vw)] pt-3 opacity-0 transition duration-150 group-hover:visible group-hover:opacity-100">
+                    <div className="rounded-[1.5rem] border border-[#ddd8d1] bg-white p-6 shadow-[0_24px_70px_-45px_rgba(20,20,20,0.38)]">
+                      <div className={`grid gap-8 ${group.sections.length > 1 ? "md:grid-cols-2" : "md:grid-cols-1"}`}>
+                        {group.sections.map((section) => (
+                          <div key={section.heading}>
+                            <p className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-[#8c847b]">
+                              {section.heading}
+                            </p>
+                            <div className="mt-4 grid gap-3">
+                              {section.links.map((link) => (
+                                <Link
+                                  key={link.href}
+                                  href={link.href}
+                                  className="text-[0.98rem] leading-6 text-[#141414] transition-colors hover:text-[#5d5750]"
+                                >
+                                  {link.label}
+                                </Link>
+                              ))}
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              )
             ))}
           </nav>
         </div>

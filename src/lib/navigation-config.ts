@@ -1,5 +1,5 @@
 import categoryTermMapData from "@/data/wp_category_term_map.json";
-import { getCategoryRoute } from "@/lib/site-routes";
+import { getCategoryRoute, siteRoutes } from "@/lib/site-routes";
 
 type CategoryTermRecord = {
   id: number;
@@ -16,6 +16,7 @@ type NavigationSectionConfig = {
 type NavigationGroupConfig = {
   label: string;
   routeSegment: string;
+  href?: string;
   accent?: boolean;
   sections: NavigationSectionConfig[];
 };
@@ -29,6 +30,7 @@ export type NavigationLink = {
 export type NavigationMenuGroup = {
   label: string;
   routeSegment: string;
+  href?: string;
   accent?: boolean;
   sections: Array<{
     heading: string;
@@ -55,6 +57,12 @@ const categoryLabelOverrides: Record<string, string> = {
 };
 
 const navigationGroupConfig: NavigationGroupConfig[] = [
+  {
+    label: "Popular products",
+    routeSegment: "popular-products",
+    href: siteRoutes.electricalOffers,
+    sections: [],
+  },
   {
     label: "Women",
     routeSegment: "women",
@@ -86,6 +94,18 @@ const navigationGroupConfig: NavigationGroupConfig[] = [
     ],
   },
   {
+    label: "Furniture & Lights",
+    routeSegment: "furniture-and-lights",
+    href: getCategoryRoute("furniture-and-lights"),
+    sections: [],
+  },
+  {
+    label: "Electricals",
+    routeSegment: "electricals",
+    href: getCategoryRoute("electricals"),
+    sections: [],
+  },
+  {
     label: "Beauty",
     routeSegment: "beauty",
     sections: [
@@ -114,6 +134,12 @@ const navigationGroupConfig: NavigationGroupConfig[] = [
         slugs: ["sports-equipment-sports-accessories", "women-s-sports-tops"],
       },
     ],
+  },
+  {
+    label: "Holiday Shop",
+    routeSegment: "holiday-shop",
+    href: getCategoryRoute("holiday-shop"),
+    sections: [],
   },
   {
     label: "Gifts",
@@ -154,6 +180,7 @@ export function getHeaderNavigationGroups(): NavigationMenuGroup[] {
     .map((group) => ({
       label: group.label,
       routeSegment: group.routeSegment,
+      href: group.href,
       accent: group.accent,
       sections: group.sections
         .map((section) => ({
@@ -166,7 +193,7 @@ export function getHeaderNavigationGroups(): NavigationMenuGroup[] {
         }))
         .filter((section) => section.links.length > 0),
     }))
-    .filter((group) => group.sections.length > 0);
+    .filter((group) => group.href || group.sections.length > 0);
 }
 
 export function getNavigationTermSlugs() {

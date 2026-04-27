@@ -693,6 +693,27 @@ const homepageProductShelves = [
   },
 ].filter((shelf) => shelf.products.length > 0);
 
+const popularProducts = [
+  {
+    title: "Tech & Electronics Offers",
+    description: "TVs, laptops, tablets, headphones and smart tech savings",
+    href: siteRoutes.electricalOffers,
+    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Laptop offers",
+    description: "Portable power for home, work and study",
+    href: siteRoutes.electricalOffers,
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
+  },
+  {
+    title: "Headphone offers",
+    description: "Wireless sound for every routine",
+    href: siteRoutes.electricalOffers,
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
+  },
+];
+
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={`${className} fill-none stroke-current stroke-[1.8]`}>
@@ -1002,6 +1023,41 @@ export function JohnLewisHomepage() {
 
       <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
+          <SectionHeading title="Popular products" linkLabel="Shop electrical offers" />
+          <div className="grid gap-4 lg:grid-cols-[1.15fr_1fr_1fr]">
+            {popularProducts.map((product, index) => (
+              <a
+                key={product.title}
+                href={product.href}
+                className={`group grid overflow-hidden border border-[#d8d2cb] bg-[#fbfaf7] transition-colors hover:bg-white ${
+                  index === 0 ? "md:grid-cols-2 lg:grid-cols-1" : ""
+                }`}
+              >
+                <div className="aspect-[4/3] overflow-hidden bg-[#f1eee9]">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.025]"
+                  />
+                </div>
+                <div className="flex min-h-[150px] flex-col p-5">
+                  <p className="jl-eyebrow text-[#8a4330]">Popular products</p>
+                  <h3 className="mt-4 text-[22px] font-medium leading-[28px] text-[#141414]">
+                    {product.title}
+                  </h3>
+                  <p className="mt-2 text-[15px] leading-6 text-[#5d5750]">{product.description}</p>
+                  <span className="jl-underlined-link mt-auto w-fit pt-5 text-[14px] leading-5">
+                    View offers
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-10 sm:py-12">
+        <div className="jl-shell">
           <SectionHeading title="Trending this week" />
           <div className="grid gap-x-4 gap-y-8 md:grid-cols-2 xl:grid-cols-4">
             {dynamicTrendingCards.map((card) => (
@@ -1092,29 +1148,6 @@ export function JohnLewisHomepage() {
         </div>
       </section>
 
-      <section className="border-b border-white bg-[#102b2b] px-4 text-white">
-        <div className="jl-footer-shell relative flex flex-wrap px-4 py-6 md:px-8">
-          <div className="hidden md:block absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-white" />
-          <div className="w-full px-0 py-6 md:w-1/2 md:border-b-0 md:pr-8">
-            <p className="jl-eyebrow text-white">Feedback</p>
-            <p className="mt-4 text-[20px] font-semibold leading-[28px] text-white">
-              Your comments help us improve our website
-            </p>
-            <a
-              href="#"
-              className="mt-6 inline-flex h-[38px] items-center justify-center border border-white bg-transparent px-4 text-[16px] leading-[22px] text-white"
-            >
-              Leave feedback
-            </a>
-          </div>
-          <div className="w-full px-0 py-6 md:w-1/2 md:pl-12">
-            <p className="jl-eyebrow text-white">Thank you</p>
-            <p className="mt-4 text-[20px] font-semibold leading-[28px] text-white">
-              Thank you for your purchase. We truly appreciate your support and hope you enjoy your order.
-            </p>
-          </div>
-        </div>
-      </section>
       </main>
       <JohnLewisSiteFooter />
     </>

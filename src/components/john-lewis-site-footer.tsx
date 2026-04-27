@@ -41,7 +41,9 @@ const footerColumns: FooterColumn[] = [
       { label: "Basket", href: "#" },
       { label: "Wish List", href: "#" },
       { label: "Brands A-Z", href: "#" },
+      { label: "Inspiration", href: "#" },
       { label: "Offers", href: "#" },
+      { label: "Events", href: "#" },
     ],
   },
   {
@@ -50,6 +52,7 @@ const footerColumns: FooterColumn[] = [
       { label: "Jobs", href: "https://www.jlpjobs.com/" },
       { label: "About the Joheiewisepro Partnership", href: "#" },
       { label: "Joheiewisepro for Business", href: "#" },
+      { label: "Happier futures", href: "#" },
       { label: "Protect+", href: "#" },
     ],
   },
@@ -69,8 +72,10 @@ const footerColumns: FooterColumn[] = [
       { label: "Terms and conditions", href: "#" },
       { label: "Secure shopping", href: "#" },
       { label: "Product recalls and safety notices", href: "#" },
+      { label: "Modern slavery statement", href: "#" },
       { label: "Privacy notice", href: "#" },
       { label: "Cookies", href: "#" },
+      { label: "Sustainability", href: "#" },
       { label: "Accessibility", href: "#" },
       { label: "Reviews policy", href: "#" },
     ],
@@ -140,6 +145,36 @@ function SocialIcon({ icon }: { icon: SocialLink["icon"] }) {
 export function JohnLewisSiteFooter() {
   return (
     <footer className="mt-auto bg-[#102b2b] text-white">
+      <section className="border-t border-white/20 px-4">
+        <div className="jl-footer-shell grid border-b border-white/20 md:grid-cols-2">
+          <div className="border-b border-white/20 px-4 py-8 md:border-b-0 md:border-r md:px-8">
+            <h2 className="text-[13px] font-medium uppercase tracking-[0.22em] text-white/75">Feedback</h2>
+            <p className="mt-4 max-w-[28rem] text-[20px] font-medium leading-[28px] text-white">
+              Your comments help us improve our website
+            </p>
+            <SiteLink
+              label="Leave feedback"
+              href="#"
+              className="mt-6 inline-flex h-[38px] items-center justify-center border border-white px-4 text-[16px] leading-[22px] text-white transition-colors hover:bg-white hover:text-[#102b2b]"
+            >
+              Leave feedback
+            </SiteLink>
+          </div>
+          <div className="px-4 py-8 md:px-8">
+            <h2 className="text-[13px] font-medium uppercase tracking-[0.22em] text-white/75">John Lewis App</h2>
+            <p className="mt-4 max-w-[28rem] text-[20px] font-medium leading-[28px] text-white">
+              Download the app for offers, inspiration and easier shopping
+            </p>
+            <a
+              href="#"
+              className="mt-6 inline-flex h-[38px] items-center justify-center border border-white bg-white px-4 text-[16px] leading-[22px] text-[#102b2b] transition-colors hover:bg-transparent hover:text-white"
+            >
+              Find out more
+            </a>
+          </div>
+        </div>
+      </section>
+
       <section className="border-t border-white/15 px-4 py-3 md:py-8">
         <div className="jl-footer-shell hidden gap-8 px-4 md:grid md:grid-cols-2 xl:grid-cols-6">
           {footerColumns.filter((column) => !shouldHideHeading(column.heading)).map((column) => (
@@ -184,7 +219,7 @@ export function JohnLewisSiteFooter() {
             href="#"
             className="text-[1.05rem] uppercase tracking-[0.34em] text-white"
           >
-            Always Competitively Priced
+            Never Knowingly Undersold
           </a>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             {socialLinks.map((link) => (
@@ -213,8 +248,11 @@ export function JohnLewisSiteFooter() {
                 </li>
               ))}
             </ul>
-            <p>Copyright ? 2024 [MyOriginalBrand] Ltd. All rights reserved.</p>
+            <p>© Joheiewisepro plc 2001 - 2026</p>
           </div>
+          <p className="max-w-[74rem] text-[12px] leading-5 text-white/60">
+            Joheiewisepro acts as a credit broker and not a lender. Credit subject to status. Terms and conditions apply.
+          </p>
         </div>
       </section>
     </footer>

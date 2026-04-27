@@ -1,8 +1,44 @@
-import productsData from "@/data/products.json";
+﻿import productsData from "@/data/products.json";
 import categoryTermMapData from "@/data/wp_category_term_map.json";
 import wpSyncData from "@/data/wp_sync_result.json";
+import popularProductsData from "@/data/popular-products.json";
+import popularProductsImageCheckData from "@/data/popular-products.image_check.json";
 import { getProductRoute } from "@/lib/site-routes";
 
+
+type PopularProductVariant = {
+  title?: string;
+  sku?: string;
+  price?: string | number;
+  image_url?: string;
+  image_urls?: string[];
+  in_stock?: boolean;
+  stock_status?: string;
+  attributes?: Record<string, string>;
+};
+
+type PopularProductItem = {
+  parent_sku: string;
+  title: string;
+  description_html?: string;
+  source_url?: string;
+  images?: string[];
+  variants?: PopularProductVariant[];
+};
+
+type PopularProductsPayload = {
+  category_name?: string;
+  category_slug?: string;
+  products?: PopularProductItem[];
+};
+
+type PopularProductsImageCheck = {
+  image_check_ok?: boolean;
+  checks?: Array<{
+    ok?: boolean;
+    output_parent_sku?: string;
+  }>;
+};
 type BaseProduct = {
   id: number;
   title: string;
@@ -86,6 +122,8 @@ const baseProductById = new Map(baseProducts.map((product) => [product.id, produ
 const rawItems = wpSyncData as RawWpSyncItem[];
 const categoryTermMap = categoryTermMapData as Record<string, CategoryTermRecord>;
 const fallbackImage = "/brand/barcode-logo.png";
+const popularProductsPayload = popularProductsData as PopularProductsPayload;
+const popularProductsImageCheck = popularProductsImageCheckData as PopularProductsImageCheck;
 
 function decodeHtml(value: string) {
   return value
@@ -263,6 +301,74 @@ function buildCatalogProducts(): CatalogProduct[] {
 
 const catalogProducts = buildCatalogProducts();
 
+function getPopularProductValidSkus() {
+  if (!popularProductsImageCheck.image_check_ok || !Array.isArray(popularProductsImageCheck.checks)) {
+    return new Set<string>();
+  }
+
+  return new Set(
+    popularProductsImageCheck.checks
+      .filter((check) => check.ok && check.output_parent_sku)
+      .map((check) => String(check.output_parent_sku)),
+  );
+}
+
+function buildPopularCatalogProducts(): CatalogProduct[] {
+  const validSkus = getPopularProductValidSkus();
+  const products = popularProductsPayload.products ?? [];
+
+  return products
+    .filter((product) => validSkus.size === 0 || validSkus.has(String(product.parent_sku)))
+    .map((product, index) => {
+      const variants = product.variants ?? [];
+      const firstVariant = variants[0];
+      const imageUrls = uniqueStrings([...(product.images ?? []), ...variants.flatMap((variant) => variant.image_urls ?? []), firstVariant?.image_url ?? ""]);
+      const normalizedVariants: ProductVariant[] = variants.map((variant, variantIndex) => ({
+        id: Number(`${index + 90}${variantIndex + 1}`),
+        parentId: Number(product.parent_sku.replace(/\D/g, "")) || index + 90000,
+        title: variant.title?.trim() || product.title,
+        price: normalizePrice(variant.price, "0.00"),
+        stockStatus: normalizeStockStatus(variant.stock_status ?? (variant.in_stock === false ? "outofstock" : "instock")),
+        sku: variant.sku?.trim() || `${product.parent_sku}-${variantIndex + 1}`,
+        imageUrl: variant.image_url || imageUrls[0] || fallbackImage,
+        attributes: variant.attributes ?? {},
+      }));
+      const defaultVariant = normalizedVariants.find((variant) => variant.stockStatus === "instock") ?? normalizedVariants[0];
+      const attributeKeys = uniqueStrings(normalizedVariants.flatMap((variant) => Object.keys(variant.attributes)));
+      const attributeOptions = attributeKeys.map((name) => ({
+        name,
+        values: uniqueStrings(
+          normalizedVariants
+            .map((variant) => variant.attributes[name])
+            .filter((value): value is string => typeof value === "string"),
+        ),
+      }));
+      const id = Number(product.parent_sku.replace(/\D/g, "")) || index + 90000;
+
+      return {
+        id,
+        title: product.title,
+        price: defaultVariant?.price ?? normalizePrice(firstVariant?.price, "0.00"),
+        stockStatus: defaultVariant?.stockStatus ?? "instock",
+        sku: product.parent_sku,
+        imageUrl: imageUrls[0] ?? fallbackImage,
+        imageUrls: imageUrls.length > 0 ? imageUrls : [fallbackImage],
+        href: getProductRoute(id),
+        categorySlugs: ["popular-products"],
+        categoryNames: ["Popular products"],
+        productType: normalizedVariants.length === 1 ? "simple" : attributeKeys.length > 1 ? "complex" : "standard",
+        attributeKeys,
+        attributeOptions,
+        variants: normalizedVariants,
+        defaultVariationId: defaultVariant?.id ?? id,
+        description: stripHtml(product.description_html ?? `${product.title} is part of the current popular products edit.`),
+        sourceUrl: product.source_url,
+      };
+    });
+}
+
+const popularCatalogProducts = buildPopularCatalogProducts();
+
 export function humanizeCategoryLabel(value?: string) {
   if (!value) {
     return "Shop all";
@@ -278,6 +384,10 @@ export function humanizeCategoryLabel(value?: string) {
 }
 
 export function getCatalogProducts(categorySlug?: string) {
+  if (categorySlug === "popular-products") {
+    return popularCatalogProducts;
+  }
+
   if (!categorySlug) {
     return catalogProducts;
   }
@@ -287,9 +397,11 @@ export function getCatalogProducts(categorySlug?: string) {
 
 export function getCatalogPayload(categorySlug?: string): CatalogPayload {
   const products = getCatalogProducts(categorySlug);
-  const categoryName = categorySlug
-    ? getCategoryDisplayName(categorySlug)
-    : undefined;
+  const categoryName = categorySlug === "popular-products"
+    ? popularProductsPayload.category_name ?? "Popular products"
+    : categorySlug
+      ? getCategoryDisplayName(categorySlug)
+      : undefined;
 
   return {
     categoryName,

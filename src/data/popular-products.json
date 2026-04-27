@@ -1,0 +1,559 @@
+{
+  "category_name": "Popular products",
+  "category_slug": "popular-products",
+  "products": [
+    {
+      "parent_sku": "4851977",
+      "title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+      "description_html": "<p>**Product code: 60099528**</p><p>Our best-selling certified Egyptian cotton's long, fine fibres create towels with excellent absorbency, durability and softness.</p><p>OEKO-TEX MADE IN GREEN® is a traceability tool, linking responsible chemical, resource and waste management, & product and consumer safety. This leads to transparent supply chains that can be traced via the unique product label. For more information, and to track the product label code, please visit www.oeko-tex.com/en/label-check</p><p>**Certified Egyptian Cotton**</p><p>We only use Egyptian Cotton which has been officially certified by the Cotton Egyptian Association (CEA), who have strict requirements on how Egyptian Cotton is grown and traded. Grown around the Nile delta which provides the best growing conditions for this species of cotton it guarantees the integrity and quality of our towels.</p><p>**Fresher, cleaner and odour-free for longer**</p><p>These towels have a Life Natural finish. The innovative natural peppermint treatment contains antimicrobial protection to keep them fresher and cleaner for longer. And whilst peppermint is the basis of this finish it doesn't leave the towels with a minty fragrance. In fact, it helps keep it completely odour-free.</p><p>**Worth knowing**</p><p>GSM stands for grams per square metre and is a standard measurement for the weight of a towel. A high GSM is a good indication of a thick, highly absorbent towel and at 700gsm these are amongst our plushest towels.</p><p>**Quality, wash after wash**</p><p>At John Lewis & Partners our bath linen is reassuringly well made. We test to the highest quality standards of durability, colour-fastness and performance.</p><p>*   Face Cloth, L30 x W30cm</p><p>*   Guest Towel, L65 x W40cm</p><p>*   Hand Towel, L90 x W50cm</p><p>*   Bath Towel, L135 x W70cm</p><p>*   Bath Sheet, L160 x W90cm</p><p>*   Extra Large Bath Sheet, L180 x W100cm (available in selected colours)</p><p>Matching bath mats are available for you to complete the look throughout your bathroom.</p><p>OEKO-TEX MADE IN GREEN® is a traceability tool, linking responsible chemical, resource and waste management, & product and consumer safety. This leads to transparent supply chains that can be traced via the unique product label. For more information, and to track the product label code, please visit www.oeko-tex.com/en/label-check</p><p>Product label code for John Lewis Egyptian cotton towels: M27MX1BZ7.</p><p>Show more</p>",
+      "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+      "images": [
+        "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+      ],
+      "variants": [
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Face Cloth (Set of 2)",
+          "sku": "4851977-LOCH-BLUE-FACE-CLOTH-SET-OF-2",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Face Cloth (Set of 2)"
+          }
+        },
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Guest Towel",
+          "sku": "4851977-LOCH-BLUE-GUEST-TOWEL",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Guest Towel"
+          }
+        },
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Hand Towel",
+          "sku": "4851977-LOCH-BLUE-HAND-TOWEL",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Hand Towel"
+          }
+        },
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Bath Towel",
+          "sku": "4851977-LOCH-BLUE-BATH-TOWEL",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Bath Towel"
+          }
+        },
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Bath Sheet",
+          "sku": "4851977-LOCH-BLUE-BATH-SHEET",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Bath Sheet"
+          }
+        },
+        {
+          "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Extra Large Bath Sheet",
+          "sku": "4851977-LOCH-BLUE-EXTRA-LARGE-BATH-SHEET",
+          "price": "6.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/009867225alt3?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Loch Blue",
+            "Size": "Extra Large Bath Sheet"
+          }
+        }
+      ]
+    },
+    {
+      "parent_sku": "113465783",
+      "title": "2025 Apple iPad 11\", A16 Processor, iPadOS, Wi-Fi, 128GB, Silver",
+      "description_html": "<p>**Product code: 86064111**</p><p>The 11-inch iPad is now more capable than ever with the superfast A16 chip, Liquid Retina display,[1] advanced cameras, fast Wi-Fi 6, USB-C connector, and four gorgeous colours. iPad delivers a powerful way to create, stay connected and get things done — all for a surprisingly affordable price.</p><p>**11-Inch Liquid Retina Display**</p><p>The gorgeous Liquid Retina display is an amazing way to watch movies or draw your next masterpiece.[1] True Tone adjusts the display to the colour temperature of the room to make viewing comfortable in any light.</p><p>**Performance and storage**</p><p>The superfast A16 chip delivers a boost in performance for your favourite activities. And with all-day battery life, iPad is perfect for playing immersive games and editing photos and videos.[2] Storage starts at 128GB and goes up to 512GB.[3]</p><p>**iPadOS + Apps**</p><p>iPadOS makes iPad more productive, intuitive and versatile. With iPadOS, run multiple apps at once, use Apple Pencil to write in any text field with Scribble, and edit and share photos. Stage Manager makes multitasking easy with resizable, overlapping apps and external display support. iPad comes with essential apps like Safari, Messages and Keynote, with over a million more apps designed specifically for iPad available on the App Store.</p><p>**Apple Pencil and Magic Keyboard Folio**</p><p>With Apple Pencil (USB-C), iPad transforms into an immersive drawing canvas and the world’s best note-taking device. Magic Keyboard Folio features a versatile two-piece design, with a detachable keyboard and a protective back panel that both attach magnetically to iPad. Apple Pencil (1st generation) is also compatible with iPad.[4]</p><p>**Advanced cameras**</p><p>iPad features a 12MP Center Stage front camera that’s perfect for video calls and selfies. The 12MP Wide back camera with True Tone flash is perfect for document scanning and capturing photos and 4K videos.</p><p>**Fast Wi-Fi connectivity**</p><p>Wi-Fi 6 gives you fast access to your files, uploads and downloads, and lets you seamlessly stream your favourite shows.</p><p>**Unlock and pay with Touch ID**</p><p>Touch ID is built into the top button, so you can use your fingerprint to unlock your iPad, sign in to apps and make payments securely with Apple Pay.</p><p>_Accessories sold separately and subject to availability. Compatibility varies by generation. Apps are available on the App Store. Title availability is subject to change. Third-party software sold separately._</p><p>_[1] The display has rounded corners. When measured diagonally as a rectangle, the 11-inch iPad is 10.86 inches. Actual viewable area is less._</p><p>_[2] Battery life varies by use and configuration. See apple.com/uk/batteries for more information._</p><p>_[3] Available space is less and varies due to many factors. Storage capacity is subject to change based on software version, settings and iPad model. 1GB = 1 billion bytes; 1TB = 1 trillion bytes. Actual formatted capacity less._</p><p>_[4] USB-C to Apple Pencil Adapter required to work with iPad (A16) and iPad (10th generation). Subject to availability._</p><p>**Please be aware:** This iPad includes a USB-C charging cable, but does not include a USB-C power adapter. Therefore, if you do not already own one, you will need to purchase the **Apple 20W USB-C Power Adapter** in order to charge this iPad.</p><p>**Need a hand with set up?**</p><p>We can support with setting up user accounts, creating initial passcodes, downloading historic apps, and making sure everything's running as it should be.</p><p>Just bring your new device to one of our stores, and our Partners in Technical Support will take it from there.</p><p>[Find out more details and pricing for our tech support services.](https://www.johnlewis.com/our-services/computer-installation)</p><p>Show more</p>",
+      "source_url": "https://www.johnlewis.com/2025-apple-ipad-11-inch-a16-processor-ipados-wi-fi-128gb/silver/p113465783",
+      "images": [
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt1?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt2?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt3?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt4?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt5?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt6?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt7?fmt=auto&$background-off-white$"
+      ],
+      "variants": [
+        {
+          "title": "2025 Apple iPad 11\", A16 Processor, iPadOS, Wi-Fi, 128GB, Silver",
+          "sku": "113465783-SILVER",
+          "price": "319.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/113465758?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt1?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt3?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt4?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt5?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt6?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/113465758alt7?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Silver"
+          }
+        }
+      ]
+    },
+    {
+      "parent_sku": "114323502",
+      "title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold",
+      "description_html": "<p>**Product code: 86109613**</p><p>Introducing Apple Watch Series 11. With hypertension notifications,(5) sleep score, and up to 24 hours of battery life.(3)</p><p>**Your powerful running partner**</p><p>With advanced metrics for all your runs and other workouts, plus features like Pacer, Heart Rate Zones, training load, Workout Buddy powered by Apple Intelligence from your nearby iPhone,(1) and more. Apple Watch Series 11 also comes with three months of Apple Fitness+ free.(2)</p><p>**Big boost in battery life**</p><p>With up to 24 hours of normal use.(3) And fast charge for up to 8 hours of normal use in just 15 minutes.(4)</p><p>**Hypertension notifications**</p><p>Apple Watch Series 11 can spot signs of chronic high blood pressure and notify you of possible hypertension.(5)</p><p>**Know your sleep score**</p><p>Sleep score provides an easy way to help track and understand the quality of your sleep, so you can make it more restorative.</p><p>**Even more health insights**</p><p>Take an ECG anytime.(6) Get notifications for a high and low heart rate, an irregular rhythm(7) and possible sleep apnoea.(8) View overnight health metrics with the Vitals app(9) and take readings of your blood oxygen.(10)</p><p>**Stunning design**</p><p>Thin and lightweight, Series 11 is comfortable to wear round the clock — while exercising and even when you’re sleeping, so it can help track your key metrics.</p><p>**Built to last**</p><p>With a super-durable glass display that’s 2x more scratch resistant than Series 10.(11) Series 11 also has a water resistance rating of 50m and is IP6X dust resistant.(12)</p><p>**Safety features**</p><p>Series 11 can detect a hard fall or serious car crash, automatically help connect you with emergency services and notify your emergency contacts.(13) Check In can automatically notify a loved one when you’ve arrived at your destination.</p><p>**Stay connected**</p><p>Send a text, take a call, listen to music, use Siri and get notifications. Apple Watch Series 11 (GPS) works with your iPhone or Wi-Fi to keep you connected.</p><p>_Apple Watch Series 11 requires iPhone 11 or later with iOS 26 or later._</p><p>_(1) Requires an Apple Intelligence–enabled iPhone nearby and Bluetooth headphones with device and Siri language set to English. Apple Intelligence is available in beta. Some features may not be available in all regions or languages. For feature and language availability and system requirements, see support.apple.com/en-gb/121115._</p><p>_(2) Apple Fitness+ requires a subscription._</p><p>_(3) Battery life varies by use and configuration. See apple.com/uk/watch/battery for more information._</p><p>_(4) Fast charging is compatible with Apple Watch Series 7 and later, any Apple Watch Ultra model and Apple Watch SE 3._</p><p>_(5) Hypertension notifications are not intended for use by people under 22 years old, those who have been previously diagnosed with hypertension, or pregnant persons._</p><p>_(6) The ECG app is available on Apple Watch Series 4 and later (excluding Apple Watch SE models) and can generate an ECG similar to a single-lead electrocardiogram. Intended for use by people 22 years old and over._</p><p>_(7) Irregular rhythm notification requires the latest versions of watchOS and iOS. It is not intended for use by people under 22 years old or those who have been previously diagnosed with atrial fibrillation (AF)._</p><p>_(8) Sleep apnoea notifications are available on Apple Watch Series 9 and later, Apple Watch Ultra 2 and later, and Apple Watch SE 3. The feature is intended to detect signs of moderate to severe sleep apnoea for people 18 years old or older without a diagnosis of sleep apnoea._</p><p>_(9) The Vitals app is for wellness purposes only and not for medical use._</p><p>_(10) The Blood Oxygen app is for wellness purposes only and not for medical use._</p><p>_(11) Apple Watch Series 11 is 2x more scratch resistant compared to earlier models._</p><p>_(12) Apple Watch Series 11 has a water resistance rating of 50 metres under ISO standard 22810:2010. This means that it may be used for shallow-water activities like swimming in a pool or ocean. Apple Watch Series 11 should not be used for scuba diving, waterskiing or other activities involving high-velocity water or submersion below shallow depth. Water resistance is not a permanent condition and can diminish over time. For additional information, see support.apple.com/en-gb/109522. Apple Watch Series 11 is rated IP6X dust resistant._</p><p>_(13) Emergency SOS requires a cellular connection or Wi-Fi calling with an internet connection from your Apple Watch or nearby iPhone. You can use cellular models of Apple Watch to make an emergency call in many locations, provided that mobile service is available. Some mobile networks may not accept an emergency call from your Apple Watch if your Apple Watch isn’t activated, if isn’t compatible with or configured to operate on a particular mobile network, if it isn’t set up for mobile service, or if the mobile network does not support emergency calling over IMS. See support.apple.com/108374 and apple.com/uk/watch/cellular for more information._</p><p>**Additional information:** manufacturers often update their Operating System (OS) software over the course of a device's lifespan - this means that your product might ship with a more advanced OS than specified.</p><p>**We can help you get set up**</p><p>Our specialist in-store Partners can help you to get set up on your new device right away. We can help with anything from transferring personal data from your old device to setting up any essential features.</p><p>Visit your local shop with your new device, or simply Click & Collect from a John Lewis & Partners when purchasing and an available Technical Support Partner can set it up for you.</p><p>[Find out more details and pricing for our tech support services.](https://www.johnlewis.com/our-services/computer-installation)</p><p>**Watch Series 11 Size Guide**</p><p>**Size****42mm****46mm**</p><p>**S/M**fits 130–180 mm wrists fits 140–190 mm wrists</p><p>**M/L**fits 150–200 mm wrists fits 160–210 mm wrists</p><p>**Sports Loop**fits 145–220 mm wrists fits 145–220 mm wrists</p><p>Show more</p>",
+      "source_url": "https://www.johnlewis.com/apple-watch-series-11-gps-42mm-aluminium-case-sport-band/rose-gold/p114323502",
+      "images": [
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt1?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt2?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt3?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt4?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt5?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt6?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt7?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt8?fmt=auto&$background-off-white$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt9?fmt=auto&$background-off-white$"
+      ],
+      "variants": [
+        {
+          "title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold - Size S-M",
+          "sku": "114323502-ROSE-GOLD-S-M",
+          "price": "369.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/010667234?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt1?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt3?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt4?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt5?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt6?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt7?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt8?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt9?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Rose Gold",
+            "Size": "S-M"
+          }
+        },
+        {
+          "title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold - Size M-L",
+          "sku": "114323502-ROSE-GOLD-M-L",
+          "price": "369.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/010667234?fmt=auto&$background-off-white$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt1?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt2?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt3?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt4?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt5?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt6?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt7?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt8?fmt=auto&$background-off-white$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/010667234alt9?fmt=auto&$background-off-white$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Rose Gold",
+            "Size": "M-L"
+          }
+        }
+      ]
+    },
+    {
+      "parent_sku": "5130353",
+      "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+      "description_html": "<p>**Product code: 66161001**</p><p>Plain-coloured with a textured weave. The pencil pleat heading creates small, neat folds at the top of the curtain and the blackout lining both eliminates light and lends a full look to the curtains, improving the drape and enhancing the vibrancy of the pattern. Pair with our matching textured weave tiebacks, available to buy in a pack of two.</p><p>**Warm in winter, cool in summer**</p><p>As the blackout lining on these curtains blocks out sunlight they help keep your room cool as well as dark. This lining also adds an extra layer of insulation to the curtains, giving them the added benefit of being thermal. They protect against both heat loss and heat gain, regulating the temperature of your room so you’re kept warm in winter and cool in summer.</p><p>**Choosing the right size**</p><p>These curtains can be hung with a pole or track using curtain hooks (not included). There are three hook positions on the heading, allowing you to choose how your curtains sit against the track or pole. For example, if you're using a track you may want to use the middle or lower row of hooks to cover the track, whereas if you're using a pole you may want to use the top row of hooks so the curtains hang below the rings. The specified drop is taken from the top row of hook pockets to the bottom edge of the curtain.</p><p>The width stated indicates the size of one curtain panel when laid completely flat. This pack contains two panels, and the track/pole length we've recommended allows for the two panels to be gathered when the curtains are drawn. For a fuller look, increase the curtain width.</p><p>*   One pair of 117cm width curtains will fit a curtain track/pole size 117-167cm</p><p>*   One pair of 167cm width curtains will fit a curtain track/pole size 133-167cm</p><p>*   One pair of 228cm width curtains will fit a curtain track/pole size 182-228cm</p><p>**Worth knowing...**</p><p>We package our curtains in recycled materials to keep them protected whilst they make their way to you. This means that when they arrive there could be some creases in them. We recommend you hang them for a few days to allow them to flatten and for the creases to fall out. If after this period your curtains still show signs of being folded then follow the ironing instructions on the back of the packaging. Be aware that each style of curtain has different ironing instructions, including heat limitations according to the fabric, so do make sure you follow the guidance provided to get the best results.</p><p>Do you need a curtain pole and accessories? [Shop them here.](https://www.johnlewis.com/home-garden/curtain-poles-tracks-accessories/c700001698)</p><p>Show more</p>",
+      "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+      "images": [
+        "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+      ],
+      "variants": [
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 137cm",
+          "sku": "5130353-DUCK-EGG-W117-X-DROP-137CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W117 x Drop 137cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 182cm",
+          "sku": "5130353-DUCK-EGG-W117-X-DROP-182CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W117 x Drop 182cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 228cm",
+          "sku": "5130353-DUCK-EGG-W117-X-DROP-228CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": false,
+          "stock_status": "outofstock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W117 x Drop 228cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 137cm",
+          "sku": "5130353-DUCK-EGG-W167-X-DROP-137CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W167 x Drop 137cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 182cm",
+          "sku": "5130353-DUCK-EGG-W167-X-DROP-182CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W167 x Drop 182cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 228cm",
+          "sku": "5130353-DUCK-EGG-W167-X-DROP-228CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W167 x Drop 228cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 274cm",
+          "sku": "5130353-DUCK-EGG-W167-X-DROP-274CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W167 x Drop 274cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 137cm",
+          "sku": "5130353-DUCK-EGG-W228-X-DROP-137CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W228 x Drop 137cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 182cm",
+          "sku": "5130353-DUCK-EGG-W228-X-DROP-182CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W228 x Drop 182cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 228cm",
+          "sku": "5130353-DUCK-EGG-W228-X-DROP-228CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W228 x Drop 228cm"
+          }
+        },
+        {
+          "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 274cm",
+          "sku": "5130353-DUCK-EGG-W228-X-DROP-274CM",
+          "price": "50.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt10?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt4?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt9?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt8?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909825alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238909736alt6?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/005130334alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-320$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/1738252856266-f0c423be-1fab-4e8a-ac1b-5563ee46fd6c_1_1?fmt=auto&$background-off-white$&$rsp-pdp-port-320$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Duck Egg",
+            "Size": "W228 x Drop 274cm"
+          }
+        }
+      ]
+    },
+    {
+      "parent_sku": "5051141",
+      "title": "Longchamp Le Pliage Original Large Shoulder Bag, Black",
+      "description_html": "<p>**Product code: 41700214**</p><p>Inspired by the neat folds of origami, Le Pliage from Longchamp delivers practical simplicity to a sleek everyday style. The light, foldaway bag has become recognisable worldwide. Dimensions: 31cm (L - measured at the base of the bag) x 30cm (H) x 19cm (W).</p><p>Offered in an array of shapes, sizes and colours, Le Pliage is designed to be light as a feather with sturdy durability and can fold away with ease.</p><p>Featuring long shoulder straps for comfort and a spacious compartment to store everything you need from documents to your laptop, this piece is one to keep with you. Minimalist in silhouette, fill it with your necessities or fold it down to the size of a paperback and simply unfold when you need it.</p>",
+      "source_url": "https://www.johnlewis.com/longchamp-le-pliage-original-large-shoulder-bag/black/p5051141",
+      "images": [
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+        "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt7?fmt=auto&$background-off-white$&$rsp-pdp-port-640$"
+      ],
+      "variants": [
+        {
+          "title": "Longchamp Le Pliage Original Large Shoulder Bag, Black",
+          "sku": "5051141-BLACK",
+          "price": "125.00",
+          "image_url": "https://media.johnlewiscontent.com/i/JohnLewis/238760628?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+          "image_urls": [
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt1?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt2?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt3?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt5?fmt=auto&$background-off-white$&$rsp-pdp-port-640$",
+            "https://media.johnlewiscontent.com/i/JohnLewis/238760628alt7?fmt=auto&$background-off-white$&$rsp-pdp-port-640$"
+          ],
+          "in_stock": true,
+          "stock_status": "instock",
+          "attributes": {
+            "Color": "Black"
+          }
+        }
+      ]
+    }
+  ]
+}

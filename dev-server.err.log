@@ -1,3 +1,423 @@
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/special-o..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/special-o..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/special-o..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
 ⚠ Blocked cross-origin request to Next.js dev resource /_next/webpack-hmr from "127.0.0.1".
 Cross-origin access to Next.js dev resources is blocked by default for safety.
 
@@ -9,18 +429,7 @@ module.exports = {
 }
 
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
-
-expected value at line 1 column 1
-
-
-⚠ Blocked cross-origin request to Next.js dev resource /__nextjs_original-stack-frames from "127.0.0.1".
+⚠ Blocked cross-origin request to Next.js dev resource /__nextjs_font/geist-latin.woff2 from "127.0.0.1".
 Cross-origin access to Next.js dev resources is blocked by default for safety.
 
 To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
@@ -31,113 +440,1091 @@ module.exports = {
 }
 
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
 
-expected value at line 1 column 1
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="h-full antialiased"
+-                         data-yd-content-ready="true"
+                        >
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
++                         lang="en"
+-                         lang="zh-CN"
++                         className="h-full antialiased"
+-                         className="h-full antialiased translated-ltr"
+-                         data-yd-content-ready="true"
+                        >
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
+                              <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
+-                               className="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+-                               id="goog-gt-tt"
+-                               style={{border-top-left-radius:"12px",border-top-right-radius:"12px", ...}}
+-                               data-id=""
+                              >
+                                <div
++                                 className="jl-shell flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:j..."
+-                                 className="VIpgJd-yAWNEb-hvhgNd"
+-                                 id="goog-gt-vt"
+                                >
+                                  <div
++                                   className="max-w-[46rem]"
+-                                   className="VIpgJd-yAWNEb-hvhgNd-Ud7fr"
+                                  >
++                                   <p className="text-sm font-medium uppercase tracking-[0.16em] text-[#141414]">
+-                                   <img
+-                                     src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg"
+-                                     width="24"
+-                                     height="24"
+-                                     alt=""
+-                                   >
+                                    ...
+                                  ...
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at p (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:45:227)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Image with src "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/00e116b80886dd349037.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/product/3..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Image with src "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/00e116b80886dd349037.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/product/3..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/product/3..." notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Image with src "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/00e116b80886dd349037.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_115brz8._.js:2431:13)
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="h-full antialiased"
+-                         data-yd-content-ready="true"
+                        >
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
+                              <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
+-                               className="VIpgJd-yAWNEb-L7lbkb skiptranslate"
+-                               id="goog-gt-tt"
+-                               style={{border-top-left-radius:"12px",border-top-right-radius:"12px", ...}}
+-                               data-id=""
+                              >
+                                <div
++                                 className="jl-shell flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:j..."
+-                                 className="VIpgJd-yAWNEb-hvhgNd"
+-                                 id="goog-gt-vt"
+                                >
+                                  <div
++                                   className="max-w-[46rem]"
+-                                   className="VIpgJd-yAWNEb-hvhgNd-Ud7fr"
+                                  >
++                                   <p className="text-sm font-medium uppercase tracking-[0.16em] text-[#141414]">
+-                                   <img
+-                                     src="https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg"
+-                                     width="24"
+-                                     height="24"
+-                                     alt=""
+-                                   >
+                                    ...
+                                  ...
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at p (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:45:227)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] Uncaught Error: Hydration failed because the server rendered HTML didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en" className="h-full ant...">
+                          <body className="min-h-full...">
+                            <OuterLayoutRouter>
+                            <CookieConsentBanner>
++                             <div
++                               className="fixed inset-x-0 bottom-0 z-[90] border-t border-[#d8d2cb] bg-white/95 px-4 ..."
++                             >
+-                             <script id="_R_">
+                  ...
+
+    at <unknown> (https://react.dev/link/hydration-mismatch)
+    at throwOnHydrationMismatch (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3318:56)
+    at beginWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6758:918)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9555:97)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64)
+    at div (<anonymous>)
+    at CookieConsentBanner (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/src_components_cookie-consent-banner_tsx_0r4yqpm._.js:37:214)
+    at RootLayout (src\app\layout.tsx:21:9)
+  19 |       <body className="min-h-full flex flex-col">
+  20 |         {children}
+> 21 |         <CookieConsentBanner />
+     |         ^
+  22 |       </body>
+  23 |     </html>
+  24 |   );
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="h-full antialiased"
+-                         data-yd-content-ready="true"
+                        >
+                  ...
+ 
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html
+                          lang="en"
+                          className="h-full antialiased"
+-                         data-yd-content-ready="true"
+                        >
+                  ...
+ 
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:74)
+    at emitPendingHydrationWarnings (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3438:13)
+    at completeWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:6885:102)
+    at runWithFiberInDEV (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:965:131)
+    at completeUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9622:23)
+    at performUnitOfWork (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9557:28)
+    at workLoopConcurrentByScheduler (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9551:58)
+    at renderRootConcurrent (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9534:71)
+    at performWorkOnRoot (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:9061:150)
+    at performWorkOnRootViaSchedulerTask (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:10255:9)
+    at MessagePort.performWorkUntilDeadline (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_0rpq4pf._.js:2647:64) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_compiled_react-dom_058-ah~._.js:3439:25)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+⨯ ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  [90m1 |[0m ﻿[36mexport[0m [36mconst[0m siteRoutes = {
+  [90m2 |[0m   home: [32m"/"[0m,
+[31m[1m>[0m [90m3 |[0m   category: [32m"/category"[0m,[32m`r`[0mn  popularProducts: [32m"/category/popular-products"[0m,[32m`r`[0mn  login: [32m"/...[0m
+  [90m  |[0m                      [31m[1m^^^[0m
+  [90m4 |[0m   product: [32m"/product"[0m,
+  [90m5 |[0m   electricalOffers: [32m"/special-offers/electrical-offers/c9500190102"[0m,
+  [90m6 |[0m   about: [32m"/business"[0m,
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/joheiewisepro-login-page.tsx
+    ./src/app/login/page.tsx
 
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-expected value at line 1 column 1
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13891:21)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13335:52) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0fhqo1d._.js:13828:21)
+⨯ ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  [90m1 |[0m ﻿[36mexport[0m [36mconst[0m siteRoutes = {
+  [90m2 |[0m   home: [32m"/"[0m,
+[31m[1m>[0m [90m3 |[0m   category: [32m"/category"[0m,[32m`r`[0mn  popularProducts: [32m"/category/popular-products"[0m,[32m`r`[0mn  login: [32m"/...[0m
+  [90m  |[0m                      [31m[1m^^^[0m
+  [90m4 |[0m   product: [32m"/product"[0m,
+  [90m5 |[0m   electricalOffers: [32m"/special-offers/electrical-offers/c9500190102"[0m,
+  [90m6 |[0m   about: [32m"/business"[0m,
+
+Parsing ecmascript source code failed
+
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-homepage.tsx
+    ./src/app/page.tsx
 
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+[browser] Uncaught Error: ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-expected value at line 1 column 1
+Parsing ecmascript source code failed
 
-
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
-
-expected value at line 1 column 1
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx
 
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+    at <unknown> (Error: ./src/lib/site-routes.ts:3:22)
+    at <unknown> (Error: (./src/lib/site-routes.ts:3:22)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-expected value at line 1 column 1
+Parsing ecmascript source code failed
 
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+Parsing ecmascript source code failed
 
-expected value at line 1 column 1
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-homepage.tsx
+    ./src/app/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
+Parsing ecmascript source code failed
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+Import traces:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/lib/catalog-data.ts
+    ./src/app/product/[id]/page.tsx
 
-expected value at line 1 column 1
+  Client Component Browser:
+    ./src/lib/site-routes.ts [Client Component Browser]
+    ./src/components/standard-product-page.tsx [Client Component Browser]
+    ./src/components/standard-product-page.tsx [Server Component]
+    ./src/app/product/[id]/page.tsx [Server Component]
 
+  Client Component SSR:
+    ./src/lib/site-routes.ts [Client Component SSR]
+    ./src/components/standard-product-page.tsx [Client Component SSR]
+    ./src/components/standard-product-page.tsx [Server Component]
+    ./src/app/product/[id]/page.tsx [Server Component] 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+Parsing ecmascript source code failed
 
-expected value at line 1 column 1
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/lib/catalog-data.ts
+    ./src/app/category/[...slug]/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
+Parsing ecmascript source code failed
 
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/joheiewisepro-login-page.tsx
+    ./src/app/login/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+[browser] ./src/lib/site-routes.ts:3:22
+Unexpected token `no substitution template literal`. Expected identifier, string literal, numeric literal or [ for the computed key
+  1 | ﻿export const siteRoutes = {
+  2 |   home: "/",
+> 3 |   category: "/category",`r`n  popularProducts: "/category/popular-products",`r`n  login: "/...
+    |                      ^^^
+  4 |   product: "/product",
+  5 |   electricalOffers: "/special-offers/electrical-offers/c9500190102",
+  6 |   about: "/business",
 
-expected value at line 1 column 1
+Parsing ecmascript source code failed
 
-
-⨯ ./src/data/wp_category_term_map.json:1:1
-Unable to make a module from invalid JSON
-[31m[1m>[0m [90m1 |[0m ﻿{
-  [90m  |[0m [31m[1m^[0m
-  [90m2 |[0m     [32m"accessories"[0m:  {
-  [90m3 |[0m                         [32m"id"[0m:  [35m23[0m,
-  [90m4 |[0m                         [32m"slug"[0m:  [32m"accessories"[0m,
-
-expected value at line 1 column 1
-
-
+Import trace:
+  Server Component:
+    ./src/lib/site-routes.ts
+    ./src/components/john-lewis-site-header.tsx
+    ./src/components/john-lewis-electrical-offers-page.tsx
+    ./src/app/special-offers/electrical-offers/c9500190102/page.tsx 
+    at handleErrors (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
+    at processMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2834:28)
+    at <unknown> (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2679:13)
+    at WebSocket.handleMessage (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2324:17) (file://E:/wangzhan/ctf-skills-main/仿制/my-clone/.next/dev/static/chunks/node_modules_next_dist_client_0pe1dg-._.js:2773:21)
