@@ -369,6 +369,42 @@ function buildPopularCatalogProducts(): CatalogProduct[] {
 
 const popularCatalogProducts = buildPopularCatalogProducts();
 
+function getSyncedCategoryProducts(categorySlug: string) {
+  return catalogProducts.filter((product) => product.categorySlugs.includes(categorySlug));
+}
+
+function getSyncedPopularProductByLegacyId(numericId: number) {
+  const fallbackProduct = popularCatalogProducts.find((product) => product.id === numericId);
+
+  if (!fallbackProduct) {
+    return null;
+  }
+
+  return getSyncedCategoryProducts("popular-products").find((product) =>
+    product.sourceUrl === fallbackProduct.sourceUrl ||
+    product.title === fallbackProduct.title ||
+    product.variants.some((variant) =>
+      variant.sku === fallbackProduct.sku || variant.sku.startsWith(`${fallbackProduct.sku}-`),
+    ),
+  ) ?? fallbackProduct;
+}
+
+function getPopularLegacyProductForSynced(product: CatalogProduct) {
+  return popularCatalogProducts.find((legacyProduct) =>
+    product.sourceUrl === legacyProduct.sourceUrl ||
+    product.title === legacyProduct.title ||
+    product.variants.some((variant) =>
+      variant.sku === legacyProduct.sku || variant.sku.startsWith(`${legacyProduct.sku}-`),
+    ),
+  );
+}
+
+function withPopularLocalHref(product: CatalogProduct) {
+  const legacyProduct = getPopularLegacyProductForSynced(product);
+
+  return legacyProduct ? { ...product, href: legacyProduct.href } : product;
+}
+
 export function humanizeCategoryLabel(value?: string) {
   if (!value) {
     return "Shop all";
@@ -385,7 +421,9 @@ export function humanizeCategoryLabel(value?: string) {
 
 export function getCatalogProducts(categorySlug?: string) {
   if (categorySlug === "popular-products") {
-    return popularCatalogProducts;
+    const syncedProducts = getSyncedCategoryProducts(categorySlug).map(withPopularLocalHref);
+
+    return syncedProducts.length > 0 ? syncedProducts : popularCatalogProducts;
   }
 
   if (!categorySlug) {
@@ -416,7 +454,8 @@ export function getCatalogProductById(id: number | string) {
     return null;
   }
 
-  return catalogProducts.find((product) => product.id === numericId) ?? null;
+  return catalogProducts.find((product) => product.id === numericId) ??
+    getSyncedPopularProductByLegacyId(numericId);
 }
 
 export function getCategoryNameBySlug(slug?: string) {

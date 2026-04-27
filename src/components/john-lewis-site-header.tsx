@@ -14,7 +14,7 @@ const utilityLinks = [
   { label: "Our stores", href: siteRoutes.popularProducts, underlined: true },
 ];
 
-const promoBannerMessage = "Free UK Delivery on orders over 拢50";
+const promoBannerMessage = "150th Anniversary: Thanks to you, 50% off merchandise while stocks last.";
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (

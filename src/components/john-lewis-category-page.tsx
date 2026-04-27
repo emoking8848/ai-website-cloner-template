@@ -20,6 +20,8 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
     : "Shop all";
   const { categoryName, products } = getCatalogPayload(activeCategorySlug);
   const heading = categoryName ?? fallbackCategoryName;
+  const getProductHref = (product: (typeof products)[number]) =>
+    activeCategorySlug === "popular-products" ? product.href : product.wpPermalink ?? product.href;
 
   return (
     <>
@@ -27,7 +29,7 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
       <main className="flex-1 bg-[linear-gradient(180deg,#fbfaf7_0%,#f4efe8_100%)]">
         <section className="border-b border-[#ece7df] bg-white/80 px-4 py-10 backdrop-blur-sm sm:py-14">
           <div className="jl-shell">
-            <p className="jl-eyebrow text-[#6f665e]">Joheiewisepro edit</p>
+            <p className="jl-eyebrow text-[#6f665e]">Joheiewisepro</p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <h1 className="max-w-[18ch] text-[2.35rem] leading-[0.94] tracking-[-0.05em] text-[#141414] sm:text-[3.4rem]">
@@ -52,7 +54,7 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
                   }`}
                 >
                   <a
-                    href={product.wpPermalink ?? product.href}
+                    href={getProductHref(product)}
                     className="block overflow-hidden bg-[#f4efe8]"
                     aria-label={`Open ${product.title}`}
                   >
@@ -84,7 +86,7 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
                       </span>
                     </div>
 
-                    <a href={product.wpPermalink ?? product.href} className="block">
+                    <a href={getProductHref(product)} className="block">
                       <h2 className="h-[4.5rem] overflow-hidden text-sm font-medium leading-6 text-[#141414] transition-colors hover:text-[#5d5750]">
                         {product.title}
                       </h2>
@@ -95,7 +97,7 @@ export function JohnLewisCategoryPage({ categoryPath }: JohnLewisCategoryPagePro
                     </p>
 
                     <a
-                      href={product.wpPermalink ?? product.href}
+                      href={getProductHref(product)}
                       className="mt-auto inline-flex w-full items-center justify-center rounded-full border border-transparent bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#2f2f2f]"
                     >
                       Flash Sale - 50% OFF

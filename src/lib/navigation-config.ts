@@ -60,7 +60,7 @@ const navigationGroupConfig: NavigationGroupConfig[] = [
   {
     label: "Popular products",
     routeSegment: "popular-products",
-    href: siteRoutes.electricalOffers,
+    href: siteRoutes.popularProducts,
     sections: [],
   },
   {

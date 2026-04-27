@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from "next/link";
+
 import { JohnLewisSiteFooter } from "@/components/john-lewis-site-footer";
 import { JohnLewisSiteHeader } from "@/components/john-lewis-site-header";
 
@@ -80,7 +82,7 @@ export function JohnLewisElectricalOffersPage() {
             <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
               <div>
                 <nav className="mb-5 flex flex-wrap gap-2 text-[13px] leading-5 text-[#5f5952]">
-                  <a href="/" className="underline underline-offset-[3px]">Home</a>
+                  <Link href="/" className="underline underline-offset-[3px]">Home</Link>
                   <span>/</span>
                   <span>Special offers</span>
                   <span>/</span>

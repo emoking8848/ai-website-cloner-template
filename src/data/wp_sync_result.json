@@ -80146,5 +80146,570 @@
       94
     ],
     "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/96975b746f6e3233120e-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43813,
+    "wp_parent_id": 43809,
+    "wp_product_id": 43809,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/2025-apple-ipad-11-a16-processor-ipados-wi-fi-128gb-silver-2/",
+    "parent_sku": "113465783",
+    "sku": "113465783-SILVER",
+    "title": "2025 Apple iPad 11\", A16 Processor, iPadOS, Wi-Fi, 128GB, Silver",
+    "product_title": "2025 Apple iPad 11\", A16 Processor, iPadOS, Wi-Fi, 128GB, Silver",
+    "price": "319.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Silver"
+    },
+    "source_url": "https://www.johnlewis.com/2025-apple-ipad-11-inch-a16-processor-ipados-wi-fi-128gb/silver/p113465783",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/85d9681474ed71ec383c-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43815,
+    "wp_parent_id": 43811,
+    "wp_product_id": 43811,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/apple-watch-series-11-gps-42mm-aluminium-case-sport-band-rose-gold/",
+    "parent_sku": "114323502",
+    "sku": "114323502-ROSE-GOLD-M-L",
+    "title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold - Size M-L",
+    "product_title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold",
+    "price": "369.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Rose Gold",
+      "Size": "M-L"
+    },
+    "source_url": "https://www.johnlewis.com/apple-watch-series-11-gps-42mm-aluminium-case-sport-band/rose-gold/p114323502",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d765db336e56d3f0114d-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43814,
+    "wp_parent_id": 43811,
+    "wp_product_id": 43811,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/apple-watch-series-11-gps-42mm-aluminium-case-sport-band-rose-gold/",
+    "parent_sku": "114323502",
+    "sku": "114323502-ROSE-GOLD-S-M",
+    "title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold - Size S-M",
+    "product_title": "Apple Watch Series 11 GPS, 42mm, Aluminium Case, Sport Band, Rose Gold",
+    "price": "369.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Rose Gold",
+      "Size": "S-M"
+    },
+    "source_url": "https://www.johnlewis.com/apple-watch-series-11-gps-42mm-aluminium-case-sport-band/rose-gold/p114323502",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d765db336e56d3f0114d-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43821,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-BATH-SHEET",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Bath Sheet",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Bath Sheet"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43820,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-BATH-TOWEL",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Bath Towel",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Bath Towel"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43822,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-EXTRA-LARGE-BATH-SHEET",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Extra Large Bath Sheet",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Extra Large Bath Sheet"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43817,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-FACE-CLOTH-SET-OF-2",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Face Cloth (Set of 2)",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Face Cloth (Set of 2)"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43818,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-GUEST-TOWEL",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Guest Towel",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Guest Towel"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43819,
+    "wp_parent_id": 43812,
+    "wp_product_id": 43812,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-egyptian-cotton-towels-loch-blue/",
+    "parent_sku": "4851977",
+    "sku": "4851977-LOCH-BLUE-HAND-TOWEL",
+    "title": "John Lewis Egyptian Cotton Towels, Loch Blue - Size Hand Towel",
+    "product_title": "John Lewis Egyptian Cotton Towels, Loch Blue",
+    "price": "6.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Loch Blue",
+      "Size": "Hand Towel"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-egyptian-cotton-towels/loch-blue/p4851977",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/07df18206f0481aaa521-scaled.jpg"
+  },
+  {
+    "wp_variation_id": 43816,
+    "wp_parent_id": 43810,
+    "wp_product_id": 43810,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/longchamp-le-pliage-original-large-shoulder-bag-black/",
+    "parent_sku": "5051141",
+    "sku": "5051141-BLACK",
+    "title": "Longchamp Le Pliage Original Large Shoulder Bag, Black",
+    "product_title": "Longchamp Le Pliage Original Large Shoulder Bag, Black",
+    "price": "125.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Black"
+    },
+    "source_url": "https://www.johnlewis.com/longchamp-le-pliage-original-large-shoulder-bag/black/p5051141",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/bf4f220cebf2fc6d4aa3.jpg"
+  },
+  {
+    "wp_variation_id": 43824,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W117-X-DROP-137CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 137cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W117 x Drop 137cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43825,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W117-X-DROP-182CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 182cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W117 x Drop 182cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43826,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W117-X-DROP-228CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W117 x Drop 228cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "outofstock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W117 x Drop 228cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43827,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W167-X-DROP-137CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 137cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W167 x Drop 137cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43828,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W167-X-DROP-182CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 182cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W167 x Drop 182cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43829,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W167-X-DROP-228CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 228cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W167 x Drop 228cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43830,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W167-X-DROP-274CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W167 x Drop 274cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W167 x Drop 274cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43831,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W228-X-DROP-137CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 137cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W228 x Drop 137cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43832,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W228-X-DROP-182CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 182cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W228 x Drop 182cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43833,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W228-X-DROP-228CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 228cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W228 x Drop 228cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
+  },
+  {
+    "wp_variation_id": 43834,
+    "wp_parent_id": 43823,
+    "wp_product_id": 43823,
+    "wp_permalink": "https://wp.joheiewisepro.com/product/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains-duck-egg/",
+    "parent_sku": "5130353",
+    "sku": "5130353-DUCK-EGG-W228-X-DROP-274CM",
+    "title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg - Size W228 x Drop 274cm",
+    "product_title": "John Lewis Textured Weave Pair Blackout Lined Pencil Pleat Curtains, Duck Egg",
+    "price": "50.00",
+    "stock_status": "instock",
+    "attributes": {
+      "Color": "Duck Egg",
+      "Size": "W228 x Drop 274cm"
+    },
+    "source_url": "https://www.johnlewis.com/john-lewis-textured-weave-pair-blackout-lined-pencil-pleat-curtains/duck-egg/p5130353",
+    "category_slugs": [
+      "popular-products"
+    ],
+    "category_names": [
+      "Popular products"
+    ],
+    "category_term_ids": [
+      106
+    ],
+    "remote_image_url": "https://wp.joheiewisepro.com/wp-content/uploads/2026/04/d0caa31997ba4b914c5a.jpg"
   }
 ]

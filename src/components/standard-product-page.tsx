@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,8 +16,48 @@ type ProductDetailPageProps = {
 
 type SelectionState = Record<string, string>;
 
+const anniversaryPromoMessage = "150th Anniversary: Thanks to you, 50% off merchandise while stocks last.";
+const purchaseCountdownSeconds = 180;
+const purchaseCountdownScript = `
+(() => {
+  const root = document.getElementById("purchase-countdown-dialog");
+  const timer = document.getElementById("purchase-countdown-timer");
+  const closeButton = document.getElementById("purchase-countdown-close");
+
+  if (!root || !timer || !closeButton) {
+    return;
+  }
+
+  const expiresAt = Date.now() + ${purchaseCountdownSeconds} * 1000;
+  const format = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return String(minutes).padStart(2, "0") + ":" + String(remainingSeconds).padStart(2, "0");
+  };
+  const update = () => {
+    const remainingSeconds = Math.max(Math.ceil((expiresAt - Date.now()) / 1000), 0);
+    timer.textContent = format(remainingSeconds);
+  };
+  const interval = window.setInterval(update, 250);
+
+  update();
+  closeButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    window.clearInterval(interval);
+    root.remove();
+  });
+})();
+`;
+
 function formatPrice(price: string) {
   return price.startsWith("\u00A3") ? price : `\u00A3${price}`;
+}
+
+function formatCountdown(seconds: number) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+
+  return `${String(minutes).padStart(2, "0")}:${String(remainingSeconds).padStart(2, "0")}`;
 }
 
 function buildInitialSelection(product: CatalogProduct) {
@@ -63,6 +103,93 @@ function AddToBasketButton({ variant }: { variant: ProductVariant }) {
     >
       Add to Basket
     </a>
+  );
+}
+
+function PurchaseCountdownBanner({ variant }: { variant: ProductVariant }) {
+  const [remainingSeconds, setRemainingSeconds] = useState(purchaseCountdownSeconds);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const expiresAt = Date.now() + purchaseCountdownSeconds * 1000;
+    const updateRemainingSeconds = () => {
+      setRemainingSeconds(Math.max(Math.ceil((expiresAt - Date.now()) / 1000), 0));
+    };
+    const timer = window.setInterval(updateRemainingSeconds, 250);
+
+    updateRemainingSeconds();
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const addToBasketHref = `https://wp.joheiewisepro.com/cart/?add-to-cart=${variant.id}`;
+
+  if (!isVisible) {
+    return null;
+  }
+
+  return (
+    <aside
+      id="purchase-countdown-dialog"
+      role="dialog"
+      aria-modal="true"
+      aria-label="150th Anniversary limited time offer"
+      className="fixed inset-0 z-[80] flex items-center justify-center bg-black/92 px-4 py-6 text-white"
+    >
+      <div className="w-full max-w-[42rem] border border-white/20 bg-black px-6 py-8 text-center shadow-[0_28px_100px_-42px_rgba(0,0,0,0.9)] sm:px-10 sm:py-11">
+        <p className="text-[0.72rem] font-semibold uppercase tracking-[0.2em] text-white/66">
+          Limited time offer
+        </p>
+        <h2 className="mt-4 text-[2.1rem] font-semibold leading-[0.98] tracking-normal text-white sm:text-[3.2rem]">
+          50% off merchandise
+        </h2>
+        <p className="mx-auto mt-5 max-w-[33rem] text-base font-medium leading-7 text-white/88 sm:text-lg">
+          {anniversaryPromoMessage}
+        </p>
+        <div className="mx-auto mt-7 inline-flex min-w-[11rem] items-center justify-center border border-white/28 px-5 py-4">
+          <span
+            id="purchase-countdown-timer"
+            className="text-[2.25rem] font-semibold tabular-nums leading-none tracking-normal text-white"
+          >
+            {formatCountdown(remainingSeconds)}
+          </span>
+        </div>
+        <p className="mt-3 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-white/62">
+          Offer reserved while supplies last
+        </p>
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          {variant.stockStatus === "outofstock" ? (
+            <button
+              type="button"
+              disabled
+              className="inline-flex h-12 cursor-not-allowed items-center justify-center bg-white/40 px-8 text-sm font-semibold text-black"
+            >
+              Out of Stock
+            </button>
+          ) : (
+            <a
+              href={addToBasketHref}
+              className="inline-flex h-12 items-center justify-center bg-white px-8 text-sm font-semibold text-black transition-colors hover:bg-[#e8e2da]"
+            >
+              Add to Basket
+            </a>
+          )}
+          <button
+            id="purchase-countdown-close"
+            type="button"
+            data-testid="continue-shopping-close"
+            onClick={(event) => {
+              event.preventDefault();
+              setIsVisible(false);
+            }}
+            className="inline-flex h-12 cursor-pointer items-center justify-center border border-white/34 px-8 text-sm font-semibold text-white transition-colors hover:bg-white/10"
+          >
+            Continue shopping
+          </button>
+        </div>
+      </div>
+      <script dangerouslySetInnerHTML={{ __html: purchaseCountdownScript }} />
+    </aside>
   );
 }
 
@@ -135,7 +262,7 @@ function SimpleProductTemplate({
         </div>
         <div className="flex flex-col p-6 sm:p-10">
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.18em] text-[#6f665e]">
-            {categoryName ?? "Product"} edit
+            {categoryName ?? "Product"}
           </p>
           <h1 className="mt-4 text-[2.1rem] leading-[0.98] tracking-[-0.05em] text-[#141414] sm:text-[3rem]">
             {product.title}
@@ -401,6 +528,7 @@ export function StandardProductPage({ product, categoryName }: ProductDetailPage
           )}
         </div>
       </main>
+      <PurchaseCountdownBanner variant={selectedVariant} />
       <JohnLewisSiteFooter />
     </>
   );

@@ -1,128 +1,134 @@
 {
-    "accessories":  {
-                        "id":  23,
-                        "slug":  "accessories",
-                        "name":  "Accessories",
-                        "count":  0
-                    },
-    "clocks":  {
-                   "id":  30,
-                   "slug":  "clocks",
-                   "name":  "Clocks",
-                   "count":  0
-               },
-    "cooking":  {
-                    "id":  31,
-                    "slug":  "cooking",
-                    "name":  "Cooking",
-                    "count":  0
-                },
-    "furniture":  {
-                      "id":  33,
-                      "slug":  "furniture",
-                      "name":  "Furniture",
-                      "count":  0
-                  },
-    "lighting":  {
-                     "id":  40,
-                     "slug":  "lighting",
-                     "name":  "Lighting",
-                     "count":  0
-                 },
-    "toys":  {
-                 "id":  49,
-                 "slug":  "toys",
-                 "name":  "Toys",
-                 "count":  0
-             },
-    "garden-table-chairs-garden-furniture-sets":  {
-                                                      "id":  91,
-                                                      "slug":  "garden-table-chairs-garden-furniture-sets",
-                                                      "name":  "Garden Table \u0026amp; Chairs | Garden Furniture Sets",
-                                                      "count":  50
-                                                  },
-    "gifts-for-grandparents-gifts-for-grandma-grandad":  {
-                                                             "id":  92,
-                                                             "slug":  "gifts-for-grandparents-gifts-for-grandma-grandad",
-                                                             "name":  "Gifts For Grandparents | Gifts For Grandma \u0026amp; Grandad",
-                                                             "count":  50
-                                                         },
-    "gifts-for-her-gifts-for-women":  {
-                                          "id":  93,
-                                          "slug":  "gifts-for-her-gifts-for-women",
-                                          "name":  "Gifts for Her | Gifts for Women",
-                                          "count":  50
-                                      },
-    "gifts-for-him-gifts-for-men":  {
-                                        "id":  94,
-                                        "slug":  "gifts-for-him-gifts-for-men",
-                                        "name":  "Gifts for Him | Gifts for Men",
-                                        "count":  50
-                                    },
-    "john-lewis-men-s-must-haves":  {
-                                        "id":  95,
-                                        "slug":  "john-lewis-men-s-must-haves",
-                                        "name":  "[Joheiewisepro] Men\u0027s Must Haves",
-                                        "count":  40
-                                    },
-    "men-s-trending-now":  {
-                               "id":  96,
-                               "slug":  "men-s-trending-now",
-                               "name":  "Men\u0027s Trending Now",
-                               "count":  44
-                           },
-    "new-in-baby-toddler-clothes-for-0-3-years":  {
-                                                      "id":  97,
-                                                      "slug":  "new-in-baby-toddler-clothes-for-0-3-years",
-                                                      "name":  "New In Baby \u0026amp; Toddler Clothes for 0-3 Years",
-                                                      "count":  50
-                                                  },
-    "new-in-beauty":  {
-                          "id":  98,
-                          "slug":  "new-in-beauty",
-                          "name":  "New In Beauty",
-                          "count":  50
-                      },
-    "new-in-garden":  {
-                          "id":  99,
-                          "slug":  "new-in-garden",
-                          "name":  "New In Garden",
-                          "count":  48
-                      },
-    "new-in-men-s-clothing-latest-men-s-fashion":  {
-                                                       "id":  100,
-                                                       "slug":  "new-in-men-s-clothing-latest-men-s-fashion",
-                                                       "name":  "New In Men\u0027s Clothing | Latest Men\u0027s Fashion",
-                                                       "count":  49
-                                                   },
-    "new-in-womenswear":  {
-                              "id":  101,
-                              "slug":  "new-in-womenswear",
-                              "name":  "New In Womenswear",
-                              "count":  49
-                          },
-    "sports-equipment-sports-accessories":  {
-                                                "id":  102,
-                                                "slug":  "sports-equipment-sports-accessories",
-                                                "name":  "Sports Equipment | Sports Accessories",
-                                                "count":  50
-                                            },
-    "women-s-dresses":  {
-                            "id":  103,
-                            "slug":  "women-s-dresses",
-                            "name":  "Women\u0027s Dresses",
-                            "count":  43
-                        },
-    "women-s-sports-tops":  {
-                                "id":  104,
-                                "slug":  "women-s-sports-tops",
-                                "name":  "Women\u0027s Sports Tops",
-                                "count":  46
-                            },
-    "women-s-trending-now":  {
-                                 "id":  105,
-                                 "slug":  "women-s-trending-now",
-                                 "name":  "Women\u0027s Trending Now",
-                                 "count":  45
-                             }
+  "accessories": {
+    "id": 23,
+    "slug": "accessories",
+    "name": "Accessories",
+    "count": 0
+  },
+  "clocks": {
+    "id": 30,
+    "slug": "clocks",
+    "name": "Clocks",
+    "count": 0
+  },
+  "cooking": {
+    "id": 31,
+    "slug": "cooking",
+    "name": "Cooking",
+    "count": 0
+  },
+  "furniture": {
+    "id": 33,
+    "slug": "furniture",
+    "name": "Furniture",
+    "count": 0
+  },
+  "lighting": {
+    "id": 40,
+    "slug": "lighting",
+    "name": "Lighting",
+    "count": 0
+  },
+  "toys": {
+    "id": 49,
+    "slug": "toys",
+    "name": "Toys",
+    "count": 0
+  },
+  "garden-table-chairs-garden-furniture-sets": {
+    "id": 91,
+    "slug": "garden-table-chairs-garden-furniture-sets",
+    "name": "Garden Table &amp; Chairs | Garden Furniture Sets",
+    "count": 50
+  },
+  "gifts-for-grandparents-gifts-for-grandma-grandad": {
+    "id": 92,
+    "slug": "gifts-for-grandparents-gifts-for-grandma-grandad",
+    "name": "Gifts For Grandparents | Gifts For Grandma &amp; Grandad",
+    "count": 50
+  },
+  "gifts-for-her-gifts-for-women": {
+    "id": 93,
+    "slug": "gifts-for-her-gifts-for-women",
+    "name": "Gifts for Her | Gifts for Women",
+    "count": 50
+  },
+  "gifts-for-him-gifts-for-men": {
+    "id": 94,
+    "slug": "gifts-for-him-gifts-for-men",
+    "name": "Gifts for Him | Gifts for Men",
+    "count": 50
+  },
+  "john-lewis-men-s-must-haves": {
+    "id": 95,
+    "slug": "john-lewis-men-s-must-haves",
+    "name": "[Joheiewisepro] Men's Must Haves",
+    "count": 40
+  },
+  "men-s-trending-now": {
+    "id": 96,
+    "slug": "men-s-trending-now",
+    "name": "Men's Trending Now",
+    "count": 44
+  },
+  "new-in-baby-toddler-clothes-for-0-3-years": {
+    "id": 97,
+    "slug": "new-in-baby-toddler-clothes-for-0-3-years",
+    "name": "New In Baby &amp; Toddler Clothes for 0-3 Years",
+    "count": 50
+  },
+  "new-in-beauty": {
+    "id": 98,
+    "slug": "new-in-beauty",
+    "name": "New In Beauty",
+    "count": 50
+  },
+  "new-in-garden": {
+    "id": 99,
+    "slug": "new-in-garden",
+    "name": "New In Garden",
+    "count": 48
+  },
+  "new-in-men-s-clothing-latest-men-s-fashion": {
+    "id": 100,
+    "slug": "new-in-men-s-clothing-latest-men-s-fashion",
+    "name": "New In Men's Clothing | Latest Men's Fashion",
+    "count": 49
+  },
+  "new-in-womenswear": {
+    "id": 101,
+    "slug": "new-in-womenswear",
+    "name": "New In Womenswear",
+    "count": 49
+  },
+  "sports-equipment-sports-accessories": {
+    "id": 102,
+    "slug": "sports-equipment-sports-accessories",
+    "name": "Sports Equipment | Sports Accessories",
+    "count": 50
+  },
+  "women-s-dresses": {
+    "id": 103,
+    "slug": "women-s-dresses",
+    "name": "Women's Dresses",
+    "count": 43
+  },
+  "women-s-sports-tops": {
+    "id": 104,
+    "slug": "women-s-sports-tops",
+    "name": "Women's Sports Tops",
+    "count": 46
+  },
+  "women-s-trending-now": {
+    "id": 105,
+    "slug": "women-s-trending-now",
+    "name": "Women's Trending Now",
+    "count": 45
+  },
+  "popular-products": {
+    "id": 106,
+    "slug": "popular-products",
+    "name": "Popular products",
+    "count": 0
+  }
 }

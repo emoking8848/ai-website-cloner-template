@@ -693,26 +693,14 @@ const homepageProductShelves = [
   },
 ].filter((shelf) => shelf.products.length > 0);
 
-const popularProducts = [
-  {
-    title: "Tech & Electronics Offers",
-    description: "TVs, laptops, tablets, headphones and smart tech savings",
-    href: siteRoutes.electricalOffers,
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Laptop offers",
-    description: "Portable power for home, work and study",
-    href: siteRoutes.electricalOffers,
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=80",
-  },
-  {
-    title: "Headphone offers",
-    description: "Wireless sound for every routine",
-    href: siteRoutes.electricalOffers,
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=80",
-  },
-];
+const popularProducts = getCatalogProducts("popular-products")
+  .slice(0, 3)
+  .map((product) => ({
+    title: product.title,
+    description: `${product.categoryNames[0] ?? "Popular products"} - from \u00A3${product.price}`,
+    href: product.href,
+    image: product.imageUrl,
+  }));
 
 function SearchIcon({ className = "h-5 w-5" }: { className?: string }) {
   return (
@@ -1023,7 +1011,7 @@ export function JohnLewisHomepage() {
 
       <section className="px-4 py-10 sm:py-12">
         <div className="jl-shell">
-          <SectionHeading title="Popular products" linkLabel="Shop electrical offers" />
+          <SectionHeading title="Popular products" linkLabel="Shop popular products" />
           <div className="grid gap-4 lg:grid-cols-[1.15fr_1fr_1fr]">
             {popularProducts.map((product, index) => (
               <a
