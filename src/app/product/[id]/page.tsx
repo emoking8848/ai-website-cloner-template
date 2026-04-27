@@ -3,14 +3,10 @@ import { notFound } from "next/navigation";
 
 import { getCatalogPayload, getCatalogProductById } from "@/lib/catalog-data";
 import { StandardProductPage } from "@/components/standard-product-page";
-import { getProductRoute } from "@/lib/site-routes";
 
 type ProductPageProps = {
   params: Promise<{
     id: string;
-  }>;
-  searchParams?: Promise<{
-    offer?: string | string[];
   }>;
 };
 
@@ -38,9 +34,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   };
 }
 
-export default async function ProductPage({ params, searchParams }: ProductPageProps) {
+export default async function ProductPage({ params }: ProductPageProps) {
   const resolvedParams = await params;
-  const resolvedSearchParams = await searchParams;
   const product = getCatalogProductById(resolvedParams.id);
 
   if (!product) {
@@ -48,17 +43,6 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   }
 
   const { categoryName } = getCatalogPayload();
-  const offerParam = Array.isArray(resolvedSearchParams?.offer)
-    ? resolvedSearchParams?.offer[0]
-    : resolvedSearchParams?.offer;
-  const showPurchaseOffer = offerParam !== "closed";
 
-  return (
-    <StandardProductPage
-      product={product}
-      categoryName={categoryName}
-      productPageHref={getProductRoute(resolvedParams.id)}
-      showPurchaseOffer={showPurchaseOffer}
-    />
-  );
+  return <StandardProductPage product={product} categoryName={categoryName} />;
 }
