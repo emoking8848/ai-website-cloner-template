@@ -12,6 +12,8 @@ import { getCategoryRoute, siteRoutes } from "@/lib/site-routes";
 type ProductDetailPageProps = {
   product: CatalogProduct;
   categoryName?: string;
+  productPageHref: string;
+  showPurchaseOffer?: boolean;
 };
 
 type SelectionState = Record<string, string>;
@@ -106,7 +108,13 @@ function AddToBasketButton({ variant }: { variant: ProductVariant }) {
   );
 }
 
-function PurchaseCountdownBanner({ variant }: { variant: ProductVariant }) {
+function PurchaseCountdownBanner({
+  continueHref,
+  variant,
+}: {
+  continueHref: string;
+  variant: ProductVariant;
+}) {
   const [remainingSeconds, setRemainingSeconds] = useState(purchaseCountdownSeconds);
   const [isVisible, setIsVisible] = useState(true);
 
@@ -174,9 +182,9 @@ function PurchaseCountdownBanner({ variant }: { variant: ProductVariant }) {
               Add to Basket
             </a>
           )}
-          <button
+          <a
             id="purchase-countdown-close"
-            type="button"
+            href={continueHref}
             data-testid="continue-shopping-close"
             onClick={(event) => {
               event.preventDefault();
@@ -185,7 +193,7 @@ function PurchaseCountdownBanner({ variant }: { variant: ProductVariant }) {
             className="inline-flex h-12 cursor-pointer items-center justify-center border border-white/34 px-8 text-sm font-semibold text-white transition-colors hover:bg-white/10"
           >
             Continue shopping
-          </button>
+          </a>
         </div>
       </div>
       <script dangerouslySetInnerHTML={{ __html: purchaseCountdownScript }} />
@@ -469,7 +477,12 @@ function ComplexProductTemplate({
   );
 }
 
-export function StandardProductPage({ product, categoryName }: ProductDetailPageProps) {
+export function StandardProductPage({
+  product,
+  categoryName,
+  productPageHref,
+  showPurchaseOffer = true,
+}: ProductDetailPageProps) {
   const initial = buildInitialSelection(product);
   const [selectedVariant, setSelectedVariant] = useState(initial.selectedVariant);
   const [selectedValues, setSelectedValues] = useState<SelectionState>(initial.selectedValues);
@@ -528,7 +541,12 @@ export function StandardProductPage({ product, categoryName }: ProductDetailPage
           )}
         </div>
       </main>
-      <PurchaseCountdownBanner variant={selectedVariant} />
+      {showPurchaseOffer ? (
+        <PurchaseCountdownBanner
+          continueHref={`${productPageHref}?offer=closed`}
+          variant={selectedVariant}
+        />
+      ) : null}
       <JohnLewisSiteFooter />
     </>
   );
